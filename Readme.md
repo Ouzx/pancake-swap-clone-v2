@@ -103,7 +103,7 @@ const App = () => {
     │   => global colors
     │   => when using it you should use css vars, not scss vars: var(--color-black)
     │   => global stylings templates
-    ├── index.js
+    ├── main.jsx
     └── screens.scss
         => screen size mixins for pancake-swap
         => Start with mobile size

@@ -1,0 +1,43 @@
+$screen-sizes: (
+  xs: 370px,
+  sm: 575px,
+  md: 852px,
+  lg: 968px,
+  xl: 1080px,
+);
+
+@mixin xs {
+  @media (min-width: map-get($screen-sizes, xs)) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: map-get($screen-sizes, sm)) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($screen-sizes, md)) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($screen-sizes, lg)) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: map-get($screen-sizes, xl)) {
+    @content;
+  }
+}
+
+@mixin custom($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
