@@ -7,6 +7,9 @@ https://pancakeswap.finance/
 # MEETINGS:
 
 Every Monday, Wednesday, Thursday
+
+<br>
+
 Link: https://meet.google.com/tqi-fyat-dsj
 
 <br>
