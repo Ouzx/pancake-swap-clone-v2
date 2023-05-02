@@ -1,0 +1,53 @@
+// DON'T Add same colors, please before adding new color check if it's already added
+// DON'T Add colors that are same with light and dark theme, use local scss variables instead
+
+:root {
+    // light colors
+  --color-white: #faf9fa;
+  --color-purple: #7645d9;
+  --color-dark-purple: #280d5f;
+  --color-light-purple: #7a6eaa;
+  --color-light-purple-2: #b8add2;
+  --color-home2: #fff;
+  --color-home2-1: #d7caec;
+  --color-gradient: #f4eeff;
+  --color-gradient-back1: #e6fdff;
+  --color-gradient-back2: #f3efff;
+  --color-contrast: #fff;
+  --color-bar-bg: #fff;
+  --color-tertiary: #eff4f5;
+  --color-bar-border: #e7e3eb;
+  --color-black: #000;
+}
+body[data-theme="dark"] {
+    // dark colors
+  --color-white: #08060b;
+  --color-purple: #9a6aff;
+  --color-dark-purple: #f4eeff;
+  --color-light-purple: #b8add2;
+  --color-home2: #09070c;
+  --color-home2-1: #201335;
+  --color-gradient: #280d5f;
+  --color-gradient-back1: #21193a;
+  --color-gradient-back2: #191326;
+  --color-contrast: #191326;
+  --color-bar-bg: #27262c;
+  --color-tertiary: #353547;
+  --color-bar-border: #383241;
+  --color-black: #fff;
+}
+
+$accent: #1fc7d4;
+
+%scroll-bar {
+  &::-webkit-scrollbar {
+    background-color: var(--color-white);
+    width: 0.6rem;
+    border-radius: 0.5rem;
+
+    &-thumb {
+      background-color: var(--color-light-purple);
+      border-radius: 0.5rem;
+    }
+  }
+}
