@@ -56,6 +56,8 @@ const App = () => {
 - Path Intellisense
 - Prettier
 - For Backend: Rapid API, Rapid API Services
+- GitLens
+- Pretty TyperScript Errors
 
 <hr/>
 
