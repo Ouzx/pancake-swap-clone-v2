@@ -1,0 +1,16 @@
+@use "../../globals.scss" as *;
+
+.link{
+
+   color: var(--color-primary);
+   display: flex;
+   gap: 0.1rem;
+   cursor: pointer;
+   text-decoration: none;
+
+   padding: 1rem 0.5rem;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
