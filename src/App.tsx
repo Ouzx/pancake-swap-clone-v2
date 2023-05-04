@@ -7,15 +7,12 @@ import Ozkan from "./sections/ozkan/Index";
 import Ahmet from "./sections/ahmet/Index";
 
 import "./App.scss";
+import Link from "./components/link/Link";
 
 function App() {
   return (
     <div className="App">
-      <Ozkan />
-      <Oguzhan />
-      <Ulas />
-      <Khaled />
-      <Ahmet />
+      <Link title="Link" />
     </div>
   );
 }
