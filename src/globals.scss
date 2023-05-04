@@ -3,6 +3,7 @@
 
 :root {
     // light colors
+  --color-primary: #1fc7d4;
   --color-white: #faf9fa;
   --color-purple: #7645d9;
   --color-dark-purple: #280d5f;
@@ -37,7 +38,7 @@ body[data-theme="dark"] {
   --color-black: #fff;
 }
 
-$accent: #1fc7d4;
+
 
 %scroll-bar {
   &::-webkit-scrollbar {
