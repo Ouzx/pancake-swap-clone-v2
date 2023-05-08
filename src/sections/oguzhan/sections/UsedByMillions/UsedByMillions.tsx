@@ -2,7 +2,7 @@ import React from "react";
 import "./UsedByMillions.scss";
 import Cards from "./Components/Cards/Cards";
 
-import { PurpleBunny } from "../../../../assets/icons";
+import { PurpleBunny, UsedByMillionsSeperator } from "../../../../assets/icons";
 
 const UsedByMillions = () => {
   return (
@@ -24,6 +24,9 @@ const UsedByMillions = () => {
       <p style={{ fontWeight: "bold" }}>Will you join them?</p>
 
       <Cards />
+      <div className="seperator">
+        <UsedByMillionsSeperator />
+      </div>
     </div>
   );
 };
