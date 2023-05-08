@@ -1,0 +1,20 @@
+.usedByMillions {
+  padding: 1em 2em;
+  .icon {
+    width: min-content;
+    margin: 0 auto;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.2;
+
+    color: var(--color-dark-purple);
+  }
+
+  p {
+    text-align: center;
+    color: var(--color-light-purple);
+  }
+}
