@@ -1,0 +1,17 @@
+.button-container {
+  width: max-content;
+  height: fit-content;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+
+  padding: 0.5em 1em;
+  border-radius: 1em;
+
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-weight: bold;
+
+  cursor: pointer;
+}
