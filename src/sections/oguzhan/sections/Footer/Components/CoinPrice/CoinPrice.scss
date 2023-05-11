@@ -4,4 +4,9 @@ $text-color: #b8add2;
   gap: 0.5em;
   color: $text-color;
   font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  svg:hover {
+    transform: scale(1.1);
+  }
 }
