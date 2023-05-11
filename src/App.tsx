@@ -7,12 +7,12 @@ import Ozkan from "./sections/ozkan/Index";
 import Ahmet from "./sections/ahmet/Index";
 
 import "./App.scss";
-import Link from "./components/link/Link";
-
+import BackToTop from "./components/BackToTop/BackToTop";
 function App() {
   return (
     <div className="App">
       <Oguzhan />
+      <BackToTop />
     </div>
   );
 }
