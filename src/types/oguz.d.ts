@@ -2,7 +2,7 @@ export interface iFooter {
   footer: Footer[];
 }
 
-interface footer {
+interface Footer {
   links: string[];
   title: string;
 }

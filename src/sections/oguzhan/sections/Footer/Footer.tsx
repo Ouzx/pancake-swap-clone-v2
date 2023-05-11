@@ -11,7 +11,17 @@ import { useQuery } from "@tanstack/react-query";
 import { iFooter } from "../../../../types/oguz";
 import { getFooter } from "../../../../api/oguz";
 const Footer = () => {
-  const { isLoading, isError, data, error } = useQuery({
+  const {
+    isLoading,
+    isError,
+    data,
+    error,
+  }: {
+    isLoading: boolean;
+    isError: boolean;
+    data: iFooter | undefined;
+    error: Error | null;
+  } = useQuery({
     queryKey: ["footer"],
     queryFn: getFooter,
   });
@@ -22,6 +32,10 @@ const Footer = () => {
 
   if (isError) {
     return <span>Error</span>;
+  }
+
+  if (data === undefined) {
+    return <span>No Data</span>;
   }
 
   return (
@@ -49,7 +63,32 @@ const Footer = () => {
 
         <div className="seperator-component-d row ">
           <div className="links">
-            <div className="column">
+            {data?.footer.map((column, index) => {
+              return (
+                <div className="column" key={index}>
+                  <h3>{column.title}</h3>
+                  <ul>
+                    {column.links.map((link, _index) => {
+                      return (
+                        <li key={_index}>
+                          <a
+                            href="#"
+                            className={
+                              index === 0 && _index === 0
+                                ? "highlighted-link"
+                                : ""
+                            }
+                          >
+                            {link}
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              );
+            })}
+            {/* <div className="column">
               <h3>ABOUT</h3>
               <ul>
                 <li>
@@ -119,7 +158,7 @@ const Footer = () => {
                   <a href="#">Terms Of Service</a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
 
