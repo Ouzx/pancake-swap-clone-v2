@@ -5,8 +5,11 @@ $text-color: #b8add2;
   color: $text-color;
   font-weight: bold;
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+
+  svg {
+    transition: 0.2s;
+  }
   svg:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
   }
 }
