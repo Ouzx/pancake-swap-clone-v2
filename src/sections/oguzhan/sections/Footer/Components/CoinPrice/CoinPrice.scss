@@ -1,0 +1,15 @@
+$text-color: #b8add2;
+.coin-price-container {
+  display: flex;
+  gap: 0.5em;
+  color: $text-color;
+  font-weight: bold;
+  cursor: pointer;
+
+  svg {
+    transition: 0.2s;
+  }
+  svg:hover {
+    transform: scale(1.2);
+  }
+}

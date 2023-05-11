@@ -1,0 +1,16 @@
+@use "../../../../../../screens.scss" as *;
+
+.usedByMillions__cards {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.5em;
+  max-width: 1152px;
+
+  @include md {
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}

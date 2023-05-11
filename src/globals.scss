@@ -2,7 +2,7 @@
 // DON'T Add colors that are same with light and dark theme, use local scss variables instead
 
 :root {
-    // light colors
+  // light colors
   --color-primary: #1fc7d4;
   --color-white: #faf9fa;
   --color-purple: #7645d9;
@@ -19,9 +19,11 @@
   --color-tertiary: #eff4f5;
   --color-bar-border: #e7e3eb;
   --color-black: #000;
+  --color-card: #fff;
+  --colors-contrast: #fff;
 }
 body[data-theme="dark"] {
-    // dark colors
+  // dark colors
   --color-white: #08060b;
   --color-purple: #9a6aff;
   --color-dark-purple: #f4eeff;
@@ -36,9 +38,8 @@ body[data-theme="dark"] {
   --color-tertiary: #353547;
   --color-bar-border: #383241;
   --color-black: #fff;
+  --color-card: #383241;
 }
-
-
 
 %scroll-bar {
   &::-webkit-scrollbar {
