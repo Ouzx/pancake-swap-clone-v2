@@ -8,12 +8,17 @@ import Ahmet from "./sections/ahmet/Index";
 
 import "./App.scss";
 import BackToTop from "./components/BackToTop/BackToTop";
+import DarkMode from "./components/DarkMode";
+import { ThemeProvider } from "./context/ThemeContext";
 function App() {
   return (
-    <div className="App">
-      <Oguzhan />
-      <BackToTop />
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <Oguzhan />
+        <BackToTop />
+        <DarkMode />
+      </div>
+    </ThemeProvider>
   );
 }
 

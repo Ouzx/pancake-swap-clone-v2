@@ -1,13 +1,11 @@
-import React, { useState } from "react";
-// import { useThemeContext } from "../../../../Context/ThemeContext";
+import { useThemeContext } from "../../context/ThemeContext";
 import { FiSun, FiMoon } from "react-icons/fi";
 
 import "./ThemeSwitch.scss";
 const ThemeSwitch = () => {
-  // const { theme, toggleTheme } = useThemeContext();
-  const [theme, setTheme] = useState(false);
+  const { theme, toggleTheme } = useThemeContext();
   const onClick = () => {
-    // toggleTheme();
+    toggleTheme();
   };
 
   return (
