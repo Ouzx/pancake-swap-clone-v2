@@ -1,12 +1,55 @@
+@use "../../../../screens.scss" as *;
+
 $bg-color: #27262c;
 .footer-container {
-  background-color: $bg-color;
+  max-width: 1200px;
+  margin: 0 auto;
   margin-top: 2em;
   padding: 3em 2em;
+
+  display: flex;
+  flex-direction: column;
+
+  @include md {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 
   .row {
     display: flex;
     align-items: center;
+
+    @include md {
+      &:first-child {
+        order: 2;
+      }
+      &:nth-child(2) {
+        order: 6;
+        margin-left: auto;
+
+        gap: 1em;
+
+        p {
+          margin: 0;
+        }
+      }
+      &:nth-child(3) {
+        order: 5;
+      }
+      &:nth-child(4) {
+        order: 1;
+        flex-basis: 75%;
+      }
+      &:nth-child(5) {
+        order: 3;
+        flex-basis: 100%;
+      }
+      &:nth-child(6) {
+        order: 4;
+        flex-basis: 100%;
+      }
+    }
 
     .theme-selector {
       margin-right: 2em;
@@ -17,6 +60,19 @@ $bg-color: #27262c;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+
+    @include md {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      margin-right: 3em;
+      margin-bottom: 2em;
+
+      h3 {
+        margin-top: 0;
+      }
+    }
     .column {
       h3 {
         color: #9a6aff;
@@ -41,10 +97,28 @@ $bg-color: #27262c;
   }
 }
 
+.footer-wrapper {
+  width: 100%;
+  background-color: $bg-color;
+}
+
 .seperator-component {
   border-top: 1px solid #383241;
   margin: 2em 0;
   padding-top: 1em;
+}
+
+.seperator-component-d {
+  border-top: 1px solid #383241;
+  margin: 2em 0;
+  padding-top: 1em;
+
+  @include md {
+    border-top: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
 }
 
 .space-filler {

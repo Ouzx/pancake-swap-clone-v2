@@ -9,103 +9,111 @@ import LanguageSelector from "../../../../components/LanguageSelector/LanguageSe
 import SocialIcons from "./Components/SocialIcons/SocialIcons";
 const Footer = () => {
   return (
-    <div className="footer-container">
-      <Logo />
-      <div className="seperator-component row">
-        <div className="space-filler">
-          <CoinPrice />
+    <div className="footer-wrapper">
+      <div className="footer-container">
+        <div className="row">
+          <Logo />
         </div>
-        <Button text="Buy CAKE">
-          <AiOutlineArrowRight />
-        </Button>
-      </div>
-      <div className=" row">
-        <div className="theme-selector">
-          <ThemeSwitch />
-        </div>
-        <LanguageSelector />
-      </div>
 
-      <div className="seperator-component row ">
-        <div className="links">
-          <div className="column">
-            <h3>ABOUT</h3>
-            <ul>
-              <li>
-                <a href="#" className="highlighted-link">
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a href="#">Brand</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-              <li>
-                <a href="#">Community</a>
-              </li>
-              <li>
-                <a href="#">Litepaper</a>
-              </li>
-              <li>
-                <a href="#">Terms Of Service</a>
-              </li>
-            </ul>
+        <div className="seperator-component-d row">
+          <div className="space-filler">
+            <CoinPrice />
           </div>
-          <div className="column">
-            <h3>ABOUT</h3>
-            <ul>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-              <li>
-                <a href="#">Brand</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-              <li>
-                <a href="#">Community</a>
-              </li>
-              <li>
-                <a href="#">Litepaper</a>
-              </li>
-              <li>
-                <a href="#">Terms Of Service</a>
-              </li>
-            </ul>
-          </div>
-          <div className="column">
-            <h3>ABOUT</h3>
-            <ul>
-              <li>
-                <a href="#">Contact</a>
-              </li>
-              <li>
-                <a href="#">Brand</a>
-              </li>
-              <li>
-                <a href="#">Blog</a>
-              </li>
-              <li>
-                <a href="#">Community</a>
-              </li>
-              <li>
-                <a href="#">Litepaper</a>
-              </li>
-              <li>
-                <a href="#">Terms Of Service</a>
-              </li>
-            </ul>
-          </div>
+          <Button text="Buy CAKE">
+            <AiOutlineArrowRight />
+          </Button>
         </div>
-      </div>
 
-      <div className="row">
-        <div className="social-media">
-          <SocialIcons />
+        <div className=" row">
+          <div className="theme-selector">
+            <ThemeSwitch />
+          </div>
+          <LanguageSelector />
         </div>
+
+        <div className="seperator-component-d row ">
+          <div className="links">
+            <div className="column">
+              <h3>ABOUT</h3>
+              <ul>
+                <li>
+                  <a href="#" className="highlighted-link">
+                    Contact
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Brand</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Community</a>
+                </li>
+                <li>
+                  <a href="#">Litepaper</a>
+                </li>
+                <li>
+                  <a href="#">Terms Of Service</a>
+                </li>
+              </ul>
+            </div>
+            <div className="column">
+              <h3>ABOUT</h3>
+              <ul>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+                <li>
+                  <a href="#">Brand</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Community</a>
+                </li>
+                <li>
+                  <a href="#">Litepaper</a>
+                </li>
+                <li>
+                  <a href="#">Terms Of Service</a>
+                </li>
+              </ul>
+            </div>
+            <div className="column">
+              <h3>ABOUT</h3>
+              <ul>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+                <li>
+                  <a href="#">Brand</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Community</a>
+                </li>
+                <li>
+                  <a href="#">Litepaper</a>
+                </li>
+                <li>
+                  <a href="#">Terms Of Service</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="social-media">
+            <SocialIcons />
+          </div>
+        </div>
+
+        <div className="seperator-component row"></div>
       </div>
     </div>
   );
