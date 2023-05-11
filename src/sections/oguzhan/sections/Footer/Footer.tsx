@@ -1,4 +1,3 @@
-import React from "react";
 import "./Footer.scss";
 import Logo from "./Components/Logo/Logo";
 import CoinPrice from "./Components/CoinPrice/CoinPrice";
@@ -7,7 +6,24 @@ import ThemeSwitch from "../../../../components/ThemeSwitch/ThemeSwitch";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import LanguageSelector from "../../../../components/LanguageSelector/LanguageSelector";
 import SocialIcons from "./Components/SocialIcons/SocialIcons";
+
+import { useQuery } from "@tanstack/react-query";
+import { iFooter } from "../../../../types/oguz";
+import { getFooter } from "../../../../api/oguz";
 const Footer = () => {
+  const { isLoading, isError, data, error } = useQuery({
+    queryKey: ["footer"],
+    queryFn: getFooter,
+  });
+
+  if (isLoading) {
+    return <span>Loading...</span>;
+  }
+
+  if (isError) {
+    return <span>Error</span>;
+  }
+
   return (
     <div className="footer-wrapper">
       <div className="footer-container">

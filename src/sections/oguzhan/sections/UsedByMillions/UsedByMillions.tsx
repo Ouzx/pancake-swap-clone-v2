@@ -3,8 +3,23 @@ import "./UsedByMillions.scss";
 import Cards from "./Components/Cards/Cards";
 
 import { PurpleBunny, UsedByMillionsSeperator } from "../../../../assets/icons";
-
+import { useQuery } from "@tanstack/react-query";
+import { getUsedByMillions } from "../../../../api/oguz";
+import { iUsedByMillions } from "../../../../types/oguz";
 const UsedByMillions = () => {
+  const { isLoading, isError, data, error } = useQuery({
+    queryKey: ["footer"],
+    queryFn: getUsedByMillions,
+  });
+
+  if (isLoading) {
+    return <span>Loading...</span>;
+  }
+
+  if (isError) {
+    return <span>Error</span>;
+  }
+
   return (
     <div className="usedByMillions">
       <div className="icon">
