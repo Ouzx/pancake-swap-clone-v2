@@ -1,0 +1,9 @@
+.social-icons {
+  line-height: 1.5;
+  color: var(--color-light-purple-2);
+
+  & > * {
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+}
