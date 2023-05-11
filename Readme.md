@@ -1,3 +1,9 @@
+# ENVIRONMENT VARIABLES
+
+```
+VITE_API_URL=http://localhost:8001
+```
+
 # Project:
 
 https://pancakeswap.finance/
