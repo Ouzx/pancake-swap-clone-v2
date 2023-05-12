@@ -1,0 +1,59 @@
+@use "../../../../../../screens.scss" as *;
+
+.usedByMillions__card {
+  position: relative;
+  min-width: 12em;
+
+  background-color: var(--color-card);
+
+  padding: 1em;
+  border: 1px solid var(--color-home2-1);
+
+  box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.11);
+
+  border-radius: 1.5rem;
+
+  margin: 0 auto;
+
+  .icon {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+  }
+
+  .number {
+    color: var(--color-dark-purple);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .adj {
+    // color: var(--color-purple);
+    font-size: 2rem;
+
+    font-weight: bold;
+  }
+
+  .description {
+    margin-top: 1.5em;
+    text-align: start;
+    margin-bottom: 0;
+  }
+
+  span {
+    display: inline-block;
+  }
+
+  @include sm {
+    width: 17.5em;
+  }
+
+  @include md {
+    // width: 17.5em;
+
+    aspect-ratio: 1/1;
+    .number {
+      margin-top: 55%;
+    }
+  }
+}
