@@ -1,0 +1,37 @@
+@use "../../../../globals.scss" as *;
+
+.connect-wallet {
+    background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 428px;
+}
+
+.connect-div-text-wrapper {
+    z-index: 1;
+    position: absolute;
+}
+
+.connect-div-header {
+    color: white;
+    font-size: 40px;
+    margin-top: 0;
+}
+
+.connect-div-info {
+    color: white;
+    &-strong {
+        @extend .connect-div-info;
+        font-weight: 600;
+    }
+}
+
+.connect-button-link-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

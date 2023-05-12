@@ -12,7 +12,7 @@ import Link from "./components/link/Link";
 function App() {
   return (
     <div className="App">
-      <Link title="Link" />
+      <Ahmet />
     </div>
   );
 }

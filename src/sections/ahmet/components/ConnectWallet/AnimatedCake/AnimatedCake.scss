@@ -1,0 +1,150 @@
+.animated-cake-div{
+    position: absolute;
+    z-index: 1;
+}
+
+.animated-cake-wrapper{
+    position: relative;
+    display: flex;
+    width: 1200px;
+    height: 428px;
+    align-self: center;
+}
+
+%animated {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.left-cakes-div{
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right-cakes-div{
+    width: 256px;
+    height: 256px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.left-top-cake{
+    @extend %animated;
+    animation: 3s ease-in-out 1s infinite normal none running leftTopAnimation;
+}
+
+.left-middle-cake{
+    @extend %animated;
+    animation: 3s ease-in-out 0.66s infinite normal none running leftMiddleAnimation;
+}
+
+.left-bottom-cake{
+    @extend %animated;
+    animation: 3s ease-in-out 0.33s infinite normal none running leftBottomAnimation;
+}
+
+.right-top-cake{
+    @extend %animated;
+    animation: 3s ease-in-out 1s infinite normal none running rightTopAnimation;
+}
+
+.right-middle-cake{
+    @extend %animated;
+    animation: 3s ease-in-out 1s infinite normal none running rightMiddleAnimation;
+}
+
+.right-bottom-cake{
+    @extend %animated;
+    animation: 3s ease-in-out 1s infinite normal none running rightBottomAnimation;
+}
+
+@keyframes leftTopAnimation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50%{
+        transform: translate(6px, 5px);
+    }
+
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes leftMiddleAnimation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50%{
+        transform: translate(5px, 10px);
+    }
+
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes leftBottomAnimation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50%{
+        transform: translate(3px, 15px);
+    }
+
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes rightTopAnimation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50%{
+        transform: translate(5px, 10px);
+    }
+
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes rightMiddleAnimation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50%{
+        transform: translate(6px, 5px);
+    }
+
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes rightBottomAnimation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50%{
+        transform: translate(3px, 15px);
+    }
+
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
