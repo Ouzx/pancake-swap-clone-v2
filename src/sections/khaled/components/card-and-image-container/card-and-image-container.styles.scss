@@ -1,0 +1,25 @@
+@use "../../../../screens.scss" as *;
+
+.khaled-card-and-image-container {
+  max-width: 1200px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: auto;
+
+  @include lg {
+    padding-top: 48px;
+    padding-botton: 48px;
+  }
+
+  @include sm {
+    padding-top: 32px;
+    padding-botton: 32px;
+  }
+
+  @include xs {
+    padding-top: 24px;
+    padding-botton: 24px;
+  }
+}

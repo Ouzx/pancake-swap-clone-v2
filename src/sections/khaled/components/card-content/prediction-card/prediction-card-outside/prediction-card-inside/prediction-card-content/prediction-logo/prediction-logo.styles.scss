@@ -1,0 +1,19 @@
+@use "../../../../../../../../../screens.scss" as *;
+
+.prediction-logo-container {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  @include md {
+    transform: rotate(-2.36deg);
+  }
+
+  .prediction-logo {
+    align-self: center;
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    color: black;
+  }
+}

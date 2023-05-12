@@ -1,0 +1,9 @@
+@use "../../../../../../../../screens.scss" as *;
+
+.prediction-card-content {
+  @include sm {
+    padding: 24px;
+  }
+
+  padding: 16px;
+}

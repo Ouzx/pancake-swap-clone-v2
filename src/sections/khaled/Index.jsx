@@ -1,7 +1,7 @@
-import React from "react";
+import Container from "./components/container/container.component";
 
 const Index = () => {
-  return <div>Index</div>;
+  return <div><Container /></div>;
 };
 
 export default Index;

@@ -12,7 +12,8 @@ import Link from "./components/link/Link";
 function App() {
   return (
     <div className="App">
-      <Link title="Link" />
+      <Khaled />
+      {/* <Link title="Link" /> */}
     </div>
   );
 }
