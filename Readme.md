@@ -1,3 +1,9 @@
+# ENVIRONMENT VARIABLES
+
+```
+VITE_API_URL=http://localhost:8001
+```
+
 # Project:
 
 https://pancakeswap.finance/
@@ -56,6 +62,8 @@ const App = () => {
 - Path Intellisense
 - Prettier
 - For Backend: Rapid API, Rapid API Services
+- GitLens
+- Pretty TyperScript Errors
 
 <hr/>
 
