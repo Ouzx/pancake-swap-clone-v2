@@ -8,11 +8,14 @@ import Ahmet from "./sections/ahmet/Index";
 
 import "./App.scss";
 import Link from "./components/link/Link";
+import TradeAnything from "./sections/ulas/sections/Trade/TradeAnything"
+import Earn from "./sections/ulas/sections/Earn/Earn";
 
 function App() {
   return (
     <div className="App">
-      <Link title="Link" />
+      <TradeAnything />
+      <Earn />
     </div>
   );
 }
