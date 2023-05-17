@@ -2,6 +2,7 @@ import Link from '../../../../components/link/Link'
 import TradeAnythingSeperator from '../../../../assets/icons/TradeAnythingSeperator'
 import "./TradeAnything.scss"
 import FloatingIcons from './components/FloatingIcons'
+import Button from '../../../../components/Button/Button'
 
 const TradeAnything = () => {
     interface Props {
@@ -20,9 +21,7 @@ const TradeAnything = () => {
                             Trade any token on BNB Smart Chain in seconds, just by connecting your wallet.
                         </p>
                         <div className='bottom__'>
-                            <button>
-
-                            </button>
+                            <Button text='Trade Now'/>
                             <Link
                                 title='Learn' />
                         </div>

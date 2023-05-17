@@ -1,11 +1,9 @@
 @use "../../../../screens.scss";
-* {
-  font-family: "Kanit";
-  margin: 0;
-  padding: 0;
-}
+
 .trade_any {
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 .mega_container {
   width: 100%;
@@ -46,6 +44,7 @@
   max-height: 48px;
   position: absolute;
   bottom: -2em;
-  right: 0;
-  fill: var(--color-home2-1);
+}
+.seperator_svg {
+  fill: var(--color-white);
 }
