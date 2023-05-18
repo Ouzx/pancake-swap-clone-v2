@@ -20,9 +20,10 @@ function App() {
       <ThemeProvider>
         <div className="App">
           {/* OZKAN'S PART HERE */}
-          <UsedByMillions />
+          <Ozkan />
+          {/* <UsedByMillions /> */}
           {/* OTHERS HERE */}
-          <Footer />
+          {/* <Footer /> */}
 
           {/* UTILS */}
           <BackToTop />

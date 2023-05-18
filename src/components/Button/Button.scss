@@ -10,13 +10,13 @@
   border-radius: 1em;
 
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-primary);
   font-weight: bold;
 
   cursor: pointer;
 
   transition: background-color 0.2s ease-in-out;
   &:hover {
-    background-color: darken(#1fc7d4, 10%);
+    background-color: darken(var(--color-primary), 10%);
   }
 }
