@@ -12,6 +12,8 @@ import PsCoin from "../PsCoin/PsCoin";
 import "./Navbar.scss";
 import HeaderLogo from "./HeaderLogo";
 import HeaderLogoMini from "./HeaderLogoMini";
+import NavbarList from "./NavbarLists/NavbarList";
+import NavbarLanguageSelector from "./LanguageSelector/NavbarLanguageSelector";
 
 const Navbar = () => {
   return (
@@ -23,12 +25,72 @@ const Navbar = () => {
         </div>
 
         <nav>
-          <span>Trade</span>
-          <span>Win</span>
-          <span>NFT</span>
-          <span>Earn</span>
-          <span>
+          <span className="navSpan">
+                Trade
+              <div className="lists-inner">
+                <NavbarList
+                  barList={[
+                    "Swap",
+                    "Liquidity",
+                    "Perpetual",
+                    "Bridge",
+                    "Limit(V2)",
+                  ]}
+                />
+            </div>
+          </span>
+          <span className="navSpan">
+              Earn
+              <div className="lists-inner">
+                <NavbarList
+                  barList={[
+                    "Farms",
+                    "Pools",
+                    "Liquid Staking",
+                  ]}
+                />
+            </div>
+          </span>
+          <span className="navSpan">
+                Win
+              <div className="lists-inner">
+                <NavbarList
+                  barList={[
+                    "Trading Competition",
+                    "Prediction (BETA)",
+                    "Lottery",
+                    "Pottery (BETA)"
+                  ]}
+                />
+            </div>
+          </span>
+          <span className="navSpan">
+                NFT
+              <div className="lists-inner">
+                <NavbarList
+                  barList={[
+                    "Overview",
+                    "Collections",
+                    "Activity"
+                  ]}
+                />
+            </div>
+          </span>
+          <span className="navSpan">
             <FiMoreHorizontal size={20} />
+            <div className="lists-inner">
+                <NavbarList
+                  barList={[
+                    "Info",
+                    "IFO",
+                    "Affiliate Program",
+                    "Voting",
+                    "Leaderboard",
+                    "Blog",
+                    "Docs"
+                  ]}
+                />
+            </div>
           </span>
         </nav>
       </div>
@@ -36,13 +98,15 @@ const Navbar = () => {
         <div className="coin">
           <PsCoin />
         </div>
-        <TbWorld style={{ cursor: "pointer" }} size={24} />
+        <span></span>
+        {/* <TbWorld style={{ cursor: "pointer" }} size={24} /> */}
+        <NavbarLanguageSelector />
         <GoGear style={{ cursor: "pointer" }} size={24} />
 
         <div className="binance-button small">
           <Button text="" style={{ padding: "0.3rem 1rem" }}>
             <AiFillCaretDown size={18} />
-          </Button >
+          </Button>
           <img src={binanceImg} alt="binance" />
         </div>
 
