@@ -21,6 +21,7 @@
   --color-black: #000;
   --color-card: #fff;
   --colors-contrast: #fff;
+  --colors-earn-bg: linear-gradient(111deg, #f2ecf2, #e8f2f6)
 }
 body[data-theme="dark"] {
   // dark colors
@@ -39,6 +40,7 @@ body[data-theme="dark"] {
   --color-bar-border: #383241;
   --color-black: #fff;
   --color-card: #383241;
+  --colors-earn-bg: linear-gradient(139deg, #313d5c, #3d2a54)
 }
 
 %scroll-bar {
