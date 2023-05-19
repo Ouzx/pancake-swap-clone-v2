@@ -24,8 +24,10 @@ function App() {
         <div className="App">
           <Settings />
           {/* OZKAN'S PART HERE */}
-          <UsedByMillions />
+          <Ozkan />
+          {/* <UsedByMillions /> */}
           {/* OTHERS HERE */}
+          {/* <Footer /> */}
            <TradeAnything />
            <Earn />
            <Khaled />

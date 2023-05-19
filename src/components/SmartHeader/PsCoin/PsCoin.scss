@@ -1,0 +1,19 @@
+$text-color: #b8add2;
+
+.ps-coin {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  span {
+    color: $text-color;
+    font-weight: 600;
+    margin-left: 0.5rem;
+  }
+  &:hover {
+    .ps-coin__logo {
+      transition: transform 0.3s;
+
+      transform: scale(1.1);
+    }
+  }
+}

@@ -1,0 +1,185 @@
+@use "../../../../../screens.scss" as *;
+
+.slide-4-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    background: linear-gradient(128.04deg, rgb(187, 211, 251) -23.79%, rgb(75, 60, 255) 121.4%);
+    position: relative;
+    max-height: max-content;
+    overflow: hidden;
+
+    .slide-4-wrapper {
+        display: flex;
+        position: relative;
+        padding: 24px;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        max-height: 192px;
+        min-height: 181px;
+
+        .silde-4-wrapper-front {
+            z-index: 1;
+            width: 100%;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            justify-content: center;
+            align-items: flex-start;
+            display: flex;
+
+            .slide-4-logo {
+                margin-top: 3px;
+
+                img {
+                    width: 119px;
+                    height: 18px;
+                }
+            }
+
+            .slide-4-text {
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 110%;
+                color: rgb(255, 255, 255);
+                text-shadow: rgba(0, 0, 0, 0.25) 0px 2px 2px;
+                margin-bottom: 21px;
+                margin-top: 16px;
+
+                @include sm{
+                        font-size: 35px;
+                        margin-top: 10px;
+                }
+
+                @include md{
+                    font-size: 40px;
+                }
+            }
+
+            .slide-4-button {
+                position: relative;
+                -webkit-box-align: center;
+                align-items: center;
+                border: 0px;
+                border-radius: 16px;
+                box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+                cursor: pointer;
+                display: inline-flex;
+                font-family: inherit;
+                font-size: 16px;
+                font-weight: 600;
+                -webkit-box-pack: center;
+                justify-content: center;
+                letter-spacing: 0.03em;
+                line-height: 1;
+                opacity: 1;
+                outline: 0px;
+                transition: background-color 0.2s ease 0s,
+                opacity 0.2s ease 0s;
+                height: 48px;
+                padding: 0px 24px;
+                background-color: var(--color-accent);
+                color: var(--color-contrast);
+                min-height: 48px;
+
+                .content{
+                    color: var(--color-contrast);
+                    font-weight: 600;
+                    line-height: 1.5;
+                    margin-right: 4px;
+                    font-size: 16px;
+                }
+
+                .button-icon{
+                    margin-left: 4px;
+                    align-self: center;
+                    fill: var(--color-contrast);
+                    color: var(--color-contrast);
+                    flex-shrink: 0;
+                }
+            }
+
+            @include md{
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+
+        }
+
+        .slide-4-wrapper-back {
+            position: absolute;
+            right: 0px;
+            bottom: -5px;
+
+            @include sm{
+                bottom: -5px;
+            }
+
+            @include lg{
+                bottom: -10px;
+            }
+
+            @include xl{
+                bottom: -15px;
+            }
+        }
+    }
+
+}
+
+.slide-thrash {
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    width: initial;
+    height: initial;
+    background: none;
+    opacity: 1;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    max-width: 100%;
+}
+
+.slide-thrash-2 {
+    box-sizing: border-box;
+    display: block;
+    width: initial;
+    height: initial;
+    background: none;
+    opacity: 1;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+}
+
+.slide-thrash-3 {
+    display: block;
+    max-width: 100%;
+    width: initial;
+    height: initial;
+    background: none;
+    opacity: 1;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.slide-thrash-4 {
+    position: absolute;
+    inset: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+    border: none;
+    margin: auto;
+    display: block;
+    width: 0px;
+    height: 0px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+}

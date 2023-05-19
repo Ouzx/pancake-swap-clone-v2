@@ -1,7 +1,7 @@
 import React from "react";
-import "./List.scss";
+import "./NavbarLanList.scss";
 
-const List = () => {
+const NavbarLanList = () => {
   return (
     <div className="language-list">
       <div className="language-list__item">English</div>
@@ -37,4 +37,4 @@ const List = () => {
   );
 };
 
-export default List;
+export default NavbarLanList;

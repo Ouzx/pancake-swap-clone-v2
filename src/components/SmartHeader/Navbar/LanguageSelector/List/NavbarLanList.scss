@@ -1,0 +1,31 @@
+@use "../../../../../globals.scss" as *;
+$bg: #27262c;
+$text: #f4feff;
+$text-hovered: #f4eeff;
+.language-list {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  padding: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
+  pointer-events: auto;
+  background-color: var(--color-contrast);
+  color: var(--color-dark-purple);
+  transform: translate(-50%, 0px);
+  width: max-content;
+  border-radius: 16px;
+  @extend %scroll-bar;
+
+  &__item {
+    margin-bottom: 10px;
+    transition: color 0.2s ease-in-out;
+    padding: 0 0.5rem;
+    text-align: center;
+    min-height: 2rem;
+    height: auto;
+    &:hover {
+      color: var(--color-light-purple);
+    }
+  }
+}
