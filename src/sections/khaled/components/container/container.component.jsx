@@ -3,7 +3,6 @@ import './container.styles.scss'
 const Container = () => {
     return (
         <div className='khaled-container khaled-container-positioning'>
-            Container
             <CardAndImageContainer />
         </div>
     );
