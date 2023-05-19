@@ -1,13 +1,10 @@
-import Button from "../../../../components/button/Button";
+import Button from "../../../../components/Button/Button";
 import Link from "../../../../components/link/Link";
 import AnimatedGraphic from "./AnimatedCoin/AnimatedCoin";
 import CakeStats from "./CakeStats/CakeStats";
 import "./BuyCake.scss";
 
-
-
 const BuyCake = () => {
-
   return (
     <section className="cake-section">
       <div className="cake-div-upper-wrapper">
