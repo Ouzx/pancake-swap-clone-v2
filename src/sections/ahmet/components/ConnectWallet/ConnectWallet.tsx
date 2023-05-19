@@ -1,21 +1,52 @@
+import { getStartInSeconds } from "../../../../api/ahmet";
 import Button from "../../../../components/button/Button";
 import Link from "../../../../components/link/Link";
+import { iStartInSeconds } from "../../../../types/ahmet";
 import AnimatedCake from "./AnimatedCake/AnimatedCake";
-import "./ConnectWallet.scss"
+import "./ConnectWallet.scss";
+
+import { useQuery } from "@tanstack/react-query";
 
 const ConnectWallet = () => {
+  const {
+    isLoading,
+    isError,
+    data,
+    error,
+  }: {
+    isLoading: boolean;
+    isError: boolean;
+    data: iStartInSeconds | undefined;
+    error: unknown;
+  } = useQuery({
+    queryKey: ["startInSeconds"],
+    queryFn: getStartInSeconds,
+  });
+
+  if (isLoading) {
+    return <span>Loading...</span>;
+  }
+
+  if (isError) {
+    return <span>Error</span>;
+  }
+
+  if (data === undefined) {
+    return <span>undefined</span>;
+  }
+
   return (
     <section className="connect-wallet">
       <AnimatedCake />
       <div className="connect-div-text-wrapper">
-        <h2 className="connect-div-header">Start in seconds.</h2>
+        <h2 className="connect-div-header">{data?.header}</h2>
         <p className="connect-div-info">
-          Connect your crypto wallet to start using the app in seconds.
+        {data?.paragraph}
         </p>
-        <p className="connect-div-info-strong">No registration needed.</p>
+        <p className="connect-div-info-strong">{data?.paragraphBold}</p>
         <div className="connect-button-link-wrapper">
-          <Link title="Learn how to start" />
-          <Button title="Connect Wallet" />
+          <Link title={data?.linkText} />
+          <Button text={data?.buttonText} />
         </div>
       </div>
     </section>

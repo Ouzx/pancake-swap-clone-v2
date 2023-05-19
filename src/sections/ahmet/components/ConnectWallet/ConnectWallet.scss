@@ -1,4 +1,5 @@
 @use "../../../../globals.scss" as *;
+@use '../../../../screens.scss' as *;
 
 .connect-wallet {
     background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
@@ -8,25 +9,33 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    height: 428px;
+    overflow: hidden;
 }
 
 .connect-div-text-wrapper {
     z-index: 1;
-    position: absolute;
+    padding: 64px 24px;
+    @include sm {
+        padding: 80px 24px;
+    }
 }
 
 .connect-div-header {
     color: white;
-    font-size: 40px;
+    font-size: 32px;
     margin-top: 0;
+    @include lg {
+        font-size: 40px;
+    }
 }
 
 .connect-div-info {
     color: white;
+    margin: 0;
     &-strong {
         @extend .connect-div-info;
         font-weight: 600;
+        margin-bottom: 8px;
     }
 }
 
@@ -34,4 +43,5 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 8px;
 }

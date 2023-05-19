@@ -1,25 +1,44 @@
 @use "../../../../globals.scss" as *;
+@use "../../../../screens.scss" as *;
 
 .cake-section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 48px 16px;
+
 }
 
 .cake-div-upper-wrapper{
     display: flex;
-    max-width: 928px;
+    flex-direction: column-reverse;
     align-items: center;
+    padding: 8px 8px;
+    padding-bottom: 16px;
+    @include md {
+        flex-direction: row;
+    }
 }
 
 .cake-div-text-wrapper{
-    margin-right: 64px;
+    @include md {
+        margin-right: 64px;
+        flex: 1 1 0;
+    }
+    @include lg {
+        width: 428px;
+    }
 }
 
 .cake-div-header {
     color: var(--color-dark-purple);
-    font-size: 40px;
-    margin-top: 0px;
+    font-size: 32px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    @include lg {
+        font-size: 40px;
+    }
 }
 
 .cake-big {
@@ -28,13 +47,82 @@
 
 .cake-div-info {
     color: var(--color-light-purple);
+    margin-bottom: 24px;
 }
 
 .cake-div-graphic-wrapper {
     display: flex;
+    flex: 1 1 0;
+    margin-left: auto;
 }
 
 
 .cake-button-link-wrapper {
     display: flex;
+    align-items: center;
+    gap: 8px;
 }
+
+.cake-div-stats-wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 928px;
+    width: 100%;
+}
+
+
+// .cake-section{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     padding: 48px 0;
+// }
+
+// .cake-div-upper-wrapper{
+//     padding: 2em;
+//     display: flex;
+//     flex-direction: column-reverse;
+//     max-width: 928px;
+//     align-items: center;
+//     @include md {
+//         flex-direction: row;
+//     }
+// }
+
+// .cake-div-text-wrapper{
+//     margin-right: 64px;
+// }
+
+// .cake-div-header {
+//     color: var(--color-dark-purple);
+//     font-size: 40px;
+//     margin-top: 0px;
+// }
+
+// .cake-big {
+//     color: var(--color-purple);
+// }
+
+// .cake-div-info {
+//     color: var(--color-light-purple);
+// }
+
+// .cake-div-graphic-wrapper {
+//     display: flex;
+//     margin-left: auto;
+//     @include md {
+//         margin-left: unset;
+//     }
+// }
+
+
+// .cake-button-link-wrapper {
+//     display: flex;
+// }
+
+// .cake-div-stats-wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     max-width: 928px;
+//     width: 100%;
+// }

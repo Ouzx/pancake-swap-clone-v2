@@ -21,7 +21,7 @@ function App() {
         <div className="App">
           {/* OZKAN'S PART HERE */}
           <UsedByMillions />
-          {/* OTHERS HERE */}
+          <Ahmet />
           <Footer />
 
           {/* UTILS */}

@@ -4,7 +4,10 @@ import AnimatedGraphic from "./AnimatedCoin/AnimatedCoin";
 import CakeStats from "./CakeStats/CakeStats";
 import "./BuyCake.scss";
 
+
+
 const BuyCake = () => {
+
   return (
     <section className="cake-section">
       <div className="cake-div-upper-wrapper">
@@ -17,7 +20,7 @@ const BuyCake = () => {
             it, farm it, spend it, stake it... heck, you can even vote with it!
           </p>
           <div className="cake-button-link-wrapper">
-            <Button title="Buy CAKE" />
+            <Button text="Buy CAKE" />
             <Link title="Learn" />
           </div>
         </div>

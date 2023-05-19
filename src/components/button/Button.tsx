@@ -1,18 +1,18 @@
 import React from "react";
-
 import "./Button.scss";
 
-interface LinkProps {
-  title: string;
-  children?: React.ReactNode
+interface ButtonProps {
+  text: string;
+  children?: React.ReactNode;
+  className?: string;
 }
 
-const Button: React.FC<LinkProps> = ({ title, children }) => {
+const Button: React.FC<ButtonProps> = ({ text, children, className }) => {
   return (
-    <button className="button">
-        {title}
-        {children}
-    </button>
+    <div className={`button-container ${className} `}>
+      {text}
+      {children}
+    </div>
   );
 };
 
