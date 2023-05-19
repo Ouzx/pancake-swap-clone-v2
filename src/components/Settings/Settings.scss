@@ -1,0 +1,143 @@
+@use "../../screens.scss" as *;
+
+.settings-container {
+  display: none;
+  position: fixed;
+  background-color: var(--color-text99);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @include md {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.settings-active {
+  display: flex;
+}
+
+.settings-wrapper {
+  width: 100%;
+  height: 60%;
+
+  border-radius: 2em;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  background-color: var(--color-bar-bg);
+
+  @include md {
+    width: 482.75px;
+    border-radius: 2em;
+  }
+
+  .title {
+    padding: 1.5em 1.5em;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-bar-border);
+
+    @include md {
+      background-image: var(--gradient-header);
+      border-top-left-radius: 2em;
+      border-top-right-radius: 2em;
+    }
+
+    span {
+      font-size: 1.5em;
+      font-weight: 600;
+      color: var(--color-dark-purple);
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      color: var(--color-primary);
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    padding: 1.5em 1.5em;
+    p {
+      color: var(--color-purple);
+      margin: 0;
+      font-weight: bold;
+      font-size: 0.8em;
+      margin-bottom: 1.5em;
+    }
+
+    .settings-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1.5em;
+      span {
+        color: var(--color-dark-purple);
+        display: flex;
+        align-items: center;
+        gap: 0.2em;
+
+        svg {
+          fill: var(--color-light-purple);
+          padding-top: 0.1em;
+        }
+      }
+    }
+
+    .settings-last {
+      margin-top: 1.5em;
+      color: var(--color-dark-purple);
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5em;
+      margin-top: 1em;
+      button {
+        width: max-content;
+        height: fit-content;
+
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+
+        padding: 0.3em 1em;
+        border-radius: 2em;
+        border: none;
+
+        background-color: var(--color-tertiary);
+        color: var(--color-primary);
+        font-weight: bold;
+        font-size: medium;
+
+        cursor: pointer;
+
+        transition: background-color 0.2s ease-in-out;
+
+        // text elipsis
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .button-active {
+        background-color: var(--color-primary);
+        color: var(--color-white);
+        box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.6);
+
+        &:hover {
+          background-color: lighten(#1fc7d4, 10%);
+        }
+      }
+    }
+  }
+}

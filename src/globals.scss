@@ -24,6 +24,10 @@
   --color-card: #fff;
   --colors-contrast: #fff;
   --color-card-background-home3: rgba(255, 255, 255, 0.6);
+  --colors-earn-bg: linear-gradient(111deg, #f2ecf2, #e8f2f6)
+  --color-text99: #280d5f99;
+  --color-switch-bg: #eeeaf4;
+  --gradient-header: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
 }
 body[data-theme="dark"] {
   // dark colors
@@ -45,6 +49,10 @@ body[data-theme="dark"] {
   --color-gradient-home3-2: #091115;
   --color-card: #383241;
   --color-card-background-home3: rgba(8, 6, 11, 0.6);
+  --colors-earn-bg: linear-gradient(139deg, #313d5c, #3d2a54)
+  --color-text99: #f4eeff99;
+  --color-switch-bg: #372f47;
+  --gradient-header: linear-gradient(166.77deg, #3b4155, #3a3045);
 }
 
 %scroll-bar {
