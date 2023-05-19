@@ -4,11 +4,11 @@ import "./TradeAnything.scss"
 import FloatingIcons from './components/FloatingIcons'
 import Button from '../../../../components/Button/Button'
 
+interface Props {
+    title: string,
+    description: string,
+}
 const TradeAnything = () => {
-    interface Props {
-        title: string,
-        description: string,
-    }
     return (
         <section className='trade_any'>
             <div className="mega_container">
@@ -21,17 +21,19 @@ const TradeAnything = () => {
                             Trade any token on BNB Smart Chain in seconds, just by connecting your wallet.
                         </p>
                         <div className='bottom__'>
-                            <Button text='Trade Now'/>
+                            <Button text='Trade Now' />
                             <Link
                                 title='Learn' />
                         </div>
                     </div>
-                    <FloatingIcons />
+                    <div className='image_container'>
+                        <FloatingIcons />
+                    </div>
                 </div>
             </div>
-            <div className="anything__seperator">
+            {/* <div className="anything__seperator">
                 <TradeAnythingSeperator />
-            </div>
+            </div> */}
         </section>
     )
 }

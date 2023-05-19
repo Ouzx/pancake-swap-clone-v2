@@ -16,6 +16,7 @@ function FloatingIcons() {
             <img className='cake' src="/CAKE.webp"
                 loading="lazy"
                 decoding="async" />
+            <img className="placeholder" src="/CAKE.webp" />
         </div>
     );
 }
