@@ -12,24 +12,31 @@ import Footer from "./sections/oguzhan/sections/Footer/Footer";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
+import TradeAnything from "./sections/ulas/sections/Trade/TradeAnything";
+import Earn from "./sections/ulas/sections/Earn/Earn";
+
 const queryClient = new QueryClient();
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <ThemeProvider>
-        <div className="App">
-          {/* OZKAN'S PART HERE */}
-          <UsedByMillions />
-          {/* OTHERS HERE */}
-          <Footer />
+    // <QueryClientProvider client={queryClient}>
+    //   <ThemeProvider>
+    //     <div className="App">
+    //       {/* OZKAN'S PART HERE */}
+    //       <UsedByMillions />
+    //       {/* OTHERS HERE */}
+    //       <Footer />
 
-          {/* UTILS */}
-          <BackToTop />
-          <DarkMode />
-        </div>
-      </ThemeProvider>
-    </QueryClientProvider>
+    //       {/* UTILS */}
+    //       <BackToTop />
+    //       <DarkMode />
+    //     </div>
+    //   </ThemeProvider>
+    // </QueryClientProvider>
+    <div>
+      <TradeAnything />
+      <Earn />
+    </div>
   );
 }
 
