@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { RxCross2 } from "react-icons/rx";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
@@ -6,15 +6,44 @@ import Button from "../Button/Button";
 import Switch from "../Switch/Switch";
 
 import "./Settings.scss";
+
+export const openSettings = () => {
+  const settings = document.querySelector(".settings-container");
+  settings?.classList.add("settings-active");
+};
+
 const Settings = () => {
   const [activeButton, setActiveButton] = useState(0);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        closeSettings();
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef]);
+
+  const closeSettings = () => {
+    const settings = document.querySelector(".settings-container");
+    settings?.classList.remove("settings-active");
+  };
 
   return (
-    <div className="settings-container">
-      <div className="settings-wrapper">
+    <div
+      className="settings-container"
+      onClick={(e) => {
+        e.stopPropagation();
+      }}
+    >
+      <div className="settings-wrapper" ref={menuRef}>
         <div className="title">
           <span>Settings</span>
-          <button>
+          <button onClick={closeSettings}>
             <RxCross2 size={18} />
           </button>
         </div>

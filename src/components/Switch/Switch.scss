@@ -25,6 +25,12 @@ $icon-offest: 4px;
       cursor: pointer;
       user-select: none;
       transition: background-color 0.3s, border-color 0.3s;
+
+      // checked
+      &:checked {
+        background-color: #31d0aa;
+        border-color: #31d0aa;
+      }
     }
 
     &__holder {
@@ -44,9 +50,9 @@ $icon-offest: 4px;
       border-radius: 50%;
       border: 3px solid var(--color-switch-bg);
 
-      @include md {
-        border-color: $passive-bg;
-      }
+      // @include md {
+      //   border-color: $passive-bg;
+      // }
 
       background-color: var(--color-bar-bg);
       color: $switch-color-passive;
@@ -58,6 +64,7 @@ $icon-offest: 4px;
         left: unset;
         transform: translateX(calc(75%));
         color: $switch-color-active;
+        border-color: #31d0aa;
       }
     }
 
