@@ -21,7 +21,10 @@ const SmartHeader = () => {
     const currentScrollPosition = window.scrollY;
 
     // If scrolling down and header is visible, hide it
-    if (currentScrollPosition > prevScrollPosition) {
+    if (
+      currentScrollPosition > prevScrollPosition &&
+      currentScrollPosition > 150
+    ) {
       setHeaderVisible(false);
     }
     // If scrolling up and header is hidden, show it
