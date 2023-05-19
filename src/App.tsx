@@ -28,6 +28,7 @@ function App() {
           {/* OTHERS HERE */}
            <TradeAnything />
            <Earn />
+           <Khaled />
           <Footer />
           {/* UTILS */}
           <BackToTop />

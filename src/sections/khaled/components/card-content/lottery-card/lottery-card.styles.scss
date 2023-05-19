@@ -1,0 +1,12 @@
+@use "../../../../../screens.scss" as *;
+
+.lottery-card {
+  display: flex;
+  flex: 1 1 0%;
+
+  @include md {
+    max-width: 100%;
+  }
+
+  max-width: 275px;
+}

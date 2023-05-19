@@ -1,0 +1,12 @@
+@use "../../../../screens.scss" as *;
+
+.khaled-card-content {
+  display: flex;
+  max-width: 600px;
+  margin: 0px auto;
+  @include md {
+    flex-direction: row;
+  }
+
+  flex-direction: column;
+}
