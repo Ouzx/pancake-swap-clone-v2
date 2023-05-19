@@ -1,7 +1,7 @@
 @use "../../../../screens.scss" as *;
 
 .khaled-card-container {
-  background: rgba(255, 255, 255, 0.6);
+  background: var(--color-card-background-home3);
   border: 1px solid var(--color-bar-border);
   box-sizing: border-box;
   backdrop-filter: blur(12px);

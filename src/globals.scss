@@ -23,6 +23,7 @@
   --color-gradient-home3-2: #eaf2f6;
   --color-card: #fff;
   --colors-contrast: #fff;
+  --color-card-background-home3: rgba(255, 255, 255, 0.6);
 }
 body[data-theme="dark"] {
   // dark colors
@@ -43,6 +44,7 @@ body[data-theme="dark"] {
   --color-gradient-home3-1: #0b4576;
   --color-gradient-home3-2: #091115;
   --color-card: #383241;
+  --color-card-background-home3: rgba(8, 6, 11, 0.6);
 }
 
 %scroll-bar {
