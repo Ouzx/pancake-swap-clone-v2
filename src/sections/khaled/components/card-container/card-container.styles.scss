@@ -1,0 +1,15 @@
+@use "../../../../screens.scss" as *;
+
+.khaled-card-container {
+  background: var(--color-card-background-home3);
+  border: 1px solid var(--color-bar-border);
+  box-sizing: border-box;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 72px;
+  padding: 16px;
+  margin: 1em;
+  @include md {
+    padding: 40px;
+  }
+}

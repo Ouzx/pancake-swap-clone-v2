@@ -1,0 +1,33 @@
+.khaled-container {
+  background: -webkit-linear-gradient(
+    top,
+    var(--color-gradient-home3-1) 0%,
+    var(--color-gradient-home3-2) 100%
+  );
+  background: -moz-linear-gradient(
+    top,
+    var(--color-gradient-home3-1) 0%,
+    var(--color-gradient-home3-2) 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    var(--color-gradient-home3-1) 0%,
+    var(--color-gradient-home3-2) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    var(--color-gradient-home3-1) 0%,
+    var(--color-gradient-home3-2) 100%
+  );
+  padding: 48px 0px;
+}
+
+.khaled-container-positioning {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  z-index: 1;
+  padding: 48px 0px;
+}

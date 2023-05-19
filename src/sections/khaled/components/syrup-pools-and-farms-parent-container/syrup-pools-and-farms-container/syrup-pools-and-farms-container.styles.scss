@@ -1,0 +1,50 @@
+@use "../../../../../screens.scss" as *;
+
+.syrup-pools-and-farms-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+
+  .top-syrup-pools-and-farms {
+    display: flex;
+    margin-bottom: 24px;
+
+    .top-syrup-pools-and-farms-h2 {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 1.1;
+      color: var(--color-dark-purple);
+
+      .top-syrup-pools-and-farms-span {
+        color: var(--color-purple);
+      }
+    }
+
+    .top-syrup-pools-and-farms-btn {
+      padding: 2px;
+      width: 48px;
+      position: relative;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: 0px;
+      border-radius: 16px;
+      background-color: transparent;
+      display: inline-flex;
+      box-shadow: none;
+      line-height: 1;
+
+      .top-syrup-pools-and-farms-btn-icon {
+        fill: var(--color-light-purple);
+        color: var(--color-light-purple);
+        flex-shrink: 0;
+        align-self: center;
+        width: 16px;
+        height: 16px;
+        stroke: var(--color-light-purple);
+        stroke-width: 3px;
+        margin-top: 5px;
+      }
+    }
+  }
+}
