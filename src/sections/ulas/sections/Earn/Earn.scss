@@ -17,7 +17,17 @@
   // display: flex;
   flex: 1 1 0;
   margin-left: auto;
-  margin-right: 64px;
+  @include md {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-right: 64px;
+    flex: 1 1 0;
+  }
+  @include lg {
+    max-width: 428px;
+    max-height: 428px;
+  }
 }
 .earn_section_container {
   display: flex;
