@@ -5,7 +5,6 @@ const List = () => {
   return (
     <div className="language-list">
       <div className="language-list__item">English</div>
-      <div className="language-list__item">Turkish</div>
       <div className="language-list__item">Deutsch</div>
       <div className="language-list__item">Français</div>
       <div className="language-list__item">Español</div>

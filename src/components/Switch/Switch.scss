@@ -1,0 +1,90 @@
+@use "../../screens.scss" as *;
+
+$passive-bg: #666171;
+$active-bg: #27262c;
+$switch-color-active: #9a6aff;
+$switch-color-passive: #ffb237;
+$icon-offest: 4px;
+.switch-container-x {
+  position: relative;
+  max-width: min-content;
+  overflow: visible;
+  cursor: pointer;
+  &__wrapper {
+    input {
+      appearance: none;
+      min-width: 56px;
+      min-height: 32px;
+      margin: 0;
+
+      position: relative;
+      background-color: var(--color-switch-bg);
+      border-radius: 32px;
+      border: 1px solid var(--color-switch-bg);
+
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.3s, border-color 0.3s;
+
+      // checked
+      &:checked {
+        background-color: #31d0aa;
+        border-color: #31d0aa;
+      }
+    }
+
+    &__holder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: absolute;
+      left: 0px;
+      top: 0px;
+
+      //   padding: 3px;
+      $size: 26px;
+      width: $size;
+      height: $size;
+
+      border-radius: 50%;
+      border: 3px solid var(--color-switch-bg);
+
+      // @include md {
+      //   border-color: $passive-bg;
+      // }
+
+      background-color: var(--color-bar-bg);
+      color: $switch-color-passive;
+
+      transition: all 0.3s;
+      cursor: pointer;
+      z-index: 1;
+      &[aria-checked="true"] {
+        left: unset;
+        transform: translateX(calc(75%));
+        color: $switch-color-active;
+        border-color: #31d0aa;
+      }
+    }
+
+    &__icon {
+      position: absolute;
+      top: 15%;
+    }
+  }
+
+  &:hover {
+    .switch-container-x__wrapper__holder {
+      border-color: $switch-color-active;
+    }
+  }
+}
+
+.--right-x {
+  right: $icon-offest;
+}
+
+.--left-x {
+  left: $icon-offest;
+}

@@ -1,0 +1,55 @@
+@use "../../../../screens.scss" as *;
+
+.slider-container{
+    border-radius: 32px;
+    inset: 0px;
+    background: -webkit-linear-gradient(top, rgb(118, 69, 217) 0%, rgb(69, 42, 122) 100%);
+    position: relative;
+    height: 219px; ////////
+    margin: 0 auto;
+    overflow: visible;
+
+
+    @include sm {
+        height: 221px;
+        margin: -12px 20px 50px 20px;
+    }
+
+    @include lg {
+        height: 232px;
+        padding-top: 0px;
+    }
+
+    &__button-container{
+        z-index: 10;
+        position: absolute;
+        bottom: 12px;
+        width: 108px;
+        // center horizontally
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include sm {
+            bottom: 35px;
+        }
+    }
+
+    &__button{
+        height: 8px;
+        border: none;
+        background-color: rgba(#fff, .5);
+        &:first-child{
+            border-radius: 4px 0 0 4px;
+        }
+
+        &:last-child{
+            border-radius: 0 4px 4px 0;
+        }
+    }
+
+
+.active{
+        background-color: #fff;
+}
+
+}

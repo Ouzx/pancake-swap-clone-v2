@@ -1,0 +1,21 @@
+.navbar-langauge-selector {
+  cursor: pointer;
+  position: relative;
+  color: var(--color-light-purple);
+
+  &__button {
+    margin: 0.95rem 0;
+  }
+
+  &__content {
+    display: none;
+    // height: 800px;
+    &:hover {
+      display: block;
+    }
+  }
+}
+
+.navbar-langauge-selector:hover .navbar-langauge-selector__content {
+  display: block;
+}
