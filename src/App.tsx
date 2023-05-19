@@ -29,10 +29,10 @@ function App() {
           {/* <UsedByMillions /> */}
           {/* OTHERS HERE */}
           {/* <Footer /> */}
-           <TradeAnything />
-           <Earn />
-           <Khaled />
-            <UsedByMillions />
+          <TradeAnything />
+          <Earn />
+          <Khaled />
+          <UsedByMillions />
           <Ahmet />
           <Footer />
           {/* UTILS */}
