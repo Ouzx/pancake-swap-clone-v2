@@ -5,11 +5,11 @@ import "./NavbarLanguageSelector.scss";
 
 const NavbarLanguageSelector = () => {
   return (
-    <div className="langauge-selector">
-      <div className="langauge-selector__button">
+    <div className="navbar-langauge-selector">
+      <div className="navbar-langauge-selector__button">
         <TbWorld size={24} />
       </div>
-      <div className="langauge-selector__content">
+      <div className="navbar-langauge-selector__content">
         <List />
       </div>
     </div>

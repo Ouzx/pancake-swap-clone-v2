@@ -1,21 +1,21 @@
-.langauge-selector {
+.navbar-langauge-selector {
   cursor: pointer;
   position: relative;
   color: var(--color-light-purple);
-  
-  
+
   &__button {
-    margin: .95rem 0;
+    margin: 0.95rem 0;
   }
 
   &__content {
     display: none;
+    // height: 800px;
     &:hover {
       display: block;
     }
   }
 }
 
-.langauge-selector:hover .langauge-selector__content {
+.navbar-langauge-selector:hover .navbar-langauge-selector__content {
   display: block;
 }
