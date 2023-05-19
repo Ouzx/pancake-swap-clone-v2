@@ -9,7 +9,7 @@ import DarkMode from "./components/DarkMode";
 import { ThemeProvider } from "./context/ThemeContext";
 import UsedByMillions from "./sections/oguzhan/sections/UsedByMillions/UsedByMillions";
 import Footer from "./sections/oguzhan/sections/Footer/Footer";
-
+import Settings, { openSettings } from "./components/Settings/Settings";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const queryClient = new QueryClient();
@@ -19,11 +19,11 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
         <div className="App">
+          <Settings />
           {/* OZKAN'S PART HERE */}
           <UsedByMillions />
           {/* OTHERS HERE */}
           <Footer />
-
           {/* UTILS */}
           <BackToTop />
           <DarkMode />

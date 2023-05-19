@@ -21,6 +21,9 @@
   --color-black: #000;
   --color-card: #fff;
   --colors-contrast: #fff;
+  --color-text99: #280d5f99;
+  --color-switch-bg: #eeeaf4;
+  --gradient-header: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
 }
 body[data-theme="dark"] {
   // dark colors
@@ -39,6 +42,9 @@ body[data-theme="dark"] {
   --color-bar-border: #383241;
   --color-black: #fff;
   --color-card: #383241;
+  --color-text99: #f4eeff99;
+  --color-switch-bg: #372f47;
+  --gradient-header: linear-gradient(166.77deg, #3b4155, #3a3045);
 }
 
 %scroll-bar {
