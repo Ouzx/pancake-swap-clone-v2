@@ -24,6 +24,7 @@ function App() {
         <div className="App">
           <Settings />
           {/* OZKAN'S PART HERE */}
+
           <Ozkan />
           {/* <UsedByMillions /> */}
           {/* OTHERS HERE */}
@@ -31,6 +32,8 @@ function App() {
            <TradeAnything />
            <Earn />
            <Khaled />
+            <UsedByMillions />
+          <Ahmet />
           <Footer />
           {/* UTILS */}
           <BackToTop />
