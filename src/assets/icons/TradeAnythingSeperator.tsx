@@ -2,7 +2,8 @@ import React from "react";
 
 const TradeAnythingSeperator = () => {
   return (
-    <svg
+    <svg className="seperator_svg"
+    
       viewBox="0 0 1660 48"
       preserveAspectRatio="none"
       width="20px"
