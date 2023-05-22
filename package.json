@@ -12,12 +12,15 @@
     "@tanstack/react-query": "^4.29.5",
     "@types/jest": "^29.5.1",
     "@types/node": "^18.16.3",
+    "comma-number": "^2.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
+    "react-spring": "^9.7.1",
     "typescript": "^5.0.4"
   },
   "devDependencies": {
+    "@types/comma-number": "^2.1.0",
     "@types/react": "^18.2.5",
     "@types/react-dom": "^18.2.3",
     "@vitejs/plugin-react": "^4.0.0",

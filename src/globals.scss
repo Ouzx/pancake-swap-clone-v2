@@ -24,6 +24,8 @@
   --color-card: #fff;
   --colors-contrast: #fff;
   --color-card-background-home3: rgba(255, 255, 255, 0.6);
+  --color-syrup-farm-arrows-purple: #958cb9;
+  --color-syrup-farm-border-left: #d7caec;
 }
 body[data-theme="dark"] {
   // dark colors
@@ -45,6 +47,8 @@ body[data-theme="dark"] {
   --color-gradient-home3-2: #091115;
   --color-card: #383241;
   --color-card-background-home3: rgba(8, 6, 11, 0.6);
+  --color-syrup-farm-arrows-purple: #8d84b4;
+  --color-syrup-farm-border-left: #262130;
 }
 
 %scroll-bar {
