@@ -1,0 +1,23 @@
+@use "../../../../globals.scss" as *;
+
+.gradient-outer {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0px;
+    left: 0px;
+
+    .gradient-inner {
+        position: absolute;
+        width: 100%;
+        bottom: -3px;
+
+        svg {
+            fill: var(--color-gradient);
+            color: var(--color-gradient);
+            display: block;
+        }
+    }
+}

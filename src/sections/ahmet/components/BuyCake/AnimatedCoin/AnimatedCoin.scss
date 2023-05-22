@@ -1,0 +1,104 @@
+@use '../../../../../screens.scss' as *;
+
+.animated-coin-wrapper{
+    position: relative;
+    display: flex;
+    width: 192px;
+    height: 192px;
+    @include md {
+        width: 100%;
+        height: 100%;
+    }
+
+    @include lg {
+        width: 428px;
+    }
+}
+
+%animated {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.cake-placeholder {
+    visibility: hidden;
+    width: 100%;
+}
+
+.cake-top-right{
+    @extend %animated;
+    animation: 3s ease-in-out 0.66s infinite normal none running topRightAnimation;
+}
+
+.cake-top-left{
+    @extend %animated;
+    animation: 3s ease-in-out 0s infinite normal none running topLeftAnimation;
+}
+
+.cake-bottom-right{
+    @extend %animated;
+    animation: 3s ease-in-out 1s infinite normal none running bottomRightAnimation;
+}
+
+.cake-coin{
+    @extend %animated;
+    animation: 3s ease-in-out 0.33s infinite normal none running coinAnimation;
+}
+
+@keyframes bottomRightAnimation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50%{
+        transform: translate(3px, 15px);
+    }
+
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes topRightAnimation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50%{
+        transform: translate(5px, 10px);
+    }
+
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes topLeftAnimation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50%{
+        transform: translate(4px, 12px);
+    }
+
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes coinAnimation {
+    0% {
+        transform: translate(0px, 0px);
+    }
+
+    50%{
+        transform: translate(6px, 5px);
+    }
+
+    100%{
+        transform: translate(0px, 0px);
+    }
+}

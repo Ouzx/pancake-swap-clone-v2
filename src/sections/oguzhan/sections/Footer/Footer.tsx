@@ -1,7 +1,6 @@
 import "./Footer.scss";
 import Logo from "./Components/Logo/Logo";
 import CoinPrice from "./Components/CoinPrice/CoinPrice";
-import Button from "../../../../components/Button/Button";
 import ThemeSwitch from "../../../../components/ThemeSwitch/ThemeSwitch";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import LanguageSelector from "../../../../components/LanguageSelector/LanguageSelector";
@@ -10,6 +9,7 @@ import SocialIcons from "./Components/SocialIcons/SocialIcons";
 import { useQuery } from "@tanstack/react-query";
 import { iFooter } from "../../../../types/oguz";
 import { getFooter } from "../../../../api/oguz";
+import Button from "../../../../components/button/Button";
 const Footer = () => {
   const {
     isLoading,

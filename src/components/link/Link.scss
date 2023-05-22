@@ -1,16 +1,22 @@
 @use "../../globals.scss" as *;
 
-.link{
+.link {
+  color: var(--color-primary);
+  display: flex;
+  gap: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  align-items: center;
 
-   color: var(--color-primary);
-   display: flex;
-   gap: 0.1rem;
-   cursor: pointer;
-   text-decoration: none;
+  padding: 1rem 0.5rem;
 
-   padding: 1rem 0.5rem;
+  svg {
+    width: 20px;
+    height: 20px;
+  }
 
-    &:hover{
-        text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
 }

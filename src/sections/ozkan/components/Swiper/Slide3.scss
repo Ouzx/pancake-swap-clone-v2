@@ -1,0 +1,30 @@
+
+.slide-container {  // domipi
+    position: relative;
+    border-radius: 32px;
+    width: 100%;
+    max-height: max-content;
+    overflow: visible;
+
+    .slide-outer {
+        display: flex;
+        position: relative;
+        padding: 24px;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        max-height: 192px;
+        min-height: 181px;
+    
+        .slide-inner {
+            display: flex;
+            z-index: 1;
+            width: 100%;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    }
+}
+
