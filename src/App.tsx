@@ -22,20 +22,13 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
         <div className="App">
-          {/* OZKAN'S PART HERE */}
-          <Ozkan />
-
-          {/* <UsedByMillions /> */}
+          {/* <Ozkan />
           <UsedByMillions />
-
-          {/* OTHERS HERE */}
           <TradeAnything />
           <Earn />
-          <Khaled />
+          <Khaled /> */}
           <Ahmet />
-
           {/* <Footer /> */}
-          <Footer />
 
           {/* UTILS */}
           <Settings />

@@ -6,10 +6,10 @@
 }
 
 .animated-cake-wrapper{
-    position: relative;
     display: flex;
-    height: 428px;
-    align-self: center;
+    position: relative;
+    width: 100%;
+    max-width: 928px;
 }
 
 %animated {

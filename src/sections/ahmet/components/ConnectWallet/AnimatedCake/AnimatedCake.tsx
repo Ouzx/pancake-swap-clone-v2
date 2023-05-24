@@ -3,8 +3,8 @@ import "./AnimatedCake.scss";
 const AnimatedCake = () => {
   return (
     // <div className="animated-cake-div">
-      // <div className="animated-cake-wrapper">
-      <>
+      <div className="animated-cake-wrapper">
+        {/* <img src="" alt="" style={{width: "256px", height: "256px"}}/> */}
         <div className="left-cakes-div">
           <img
             src="/ConnectWallet/left-top.webp"
@@ -49,8 +49,7 @@ const AnimatedCake = () => {
             className="right-bottom-cake"
           />
         </div>
-        </>
-      // </div>
+      </div>
     // </div>
   );
 };

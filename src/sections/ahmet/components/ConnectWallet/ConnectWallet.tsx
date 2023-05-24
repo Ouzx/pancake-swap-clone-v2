@@ -1,5 +1,5 @@
 import { getStartInSeconds } from "../../../../api/ahmet";
-import Button from "../../../../components/button/Button";
+import Button from "../../../../components/Button/Button";
 import Link from "../../../../components/link/Link";
 import { iStartInSeconds } from "../../../../types/ahmet";
 import AnimatedCake from "./AnimatedCake/AnimatedCake";
