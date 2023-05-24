@@ -6,7 +6,7 @@
     flex-direction: column;
     padding: 48px 16px;
     @include lg {
-        max-width: 968px;
+        max-width: 920px;
         margin: auto;
     }
 }
@@ -18,6 +18,9 @@
     padding: 0 8px;
     @include md {
         flex-direction: row;
+    }
+    @include lg {
+        padding: 0;
     }
 }
 
