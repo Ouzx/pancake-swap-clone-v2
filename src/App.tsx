@@ -12,6 +12,8 @@ import UsedByMillions from "./sections/oguzhan/sections/UsedByMillions/UsedByMil
 import Footer from "./sections/oguzhan/sections/Footer/Footer";
 import Settings, { openSettings } from "./components/Settings/Settings";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Trade from "./sections/ulas/Trade";
+import Earn from "./sections/ulas/Earn";
 
 const queryClient = new QueryClient();
 
@@ -25,10 +27,11 @@ function App() {
 
           {/* <UsedByMillions /> */}
           <UsedByMillions />
-
+          {/* ULAS'S PART*/}
+          <Trade />
+          <Earn />
           {/* OTHERS HERE */}
 
-          {/* ULAS'S PART*/}
           <Khaled />
           <Ahmet />
 
