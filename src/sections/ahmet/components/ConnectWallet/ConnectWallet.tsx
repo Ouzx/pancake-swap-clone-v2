@@ -1,5 +1,5 @@
 import { getStartInSeconds } from "../../../../api/ahmet";
-import Button from "../../../../components/button/Button";
+import Button from "../../../../components/Button/Button";
 import Link from "../../../../components/link/Link";
 import { iStartInSeconds } from "../../../../types/ahmet";
 import AnimatedCake from "./AnimatedCake/AnimatedCake";
@@ -40,9 +40,7 @@ const ConnectWallet = () => {
       <AnimatedCake />
       <div className="connect-div-text-wrapper">
         <h2 className="connect-div-header">{data?.header}</h2>
-        <p className="connect-div-info">
-        {data?.paragraph}
-        </p>
+        <p className="connect-div-info">{data?.paragraph}</p>
         <p className="connect-div-info-strong">{data?.paragraphBold}</p>
         <div className="connect-button-link-wrapper">
           <Link title={data?.linkText} />
