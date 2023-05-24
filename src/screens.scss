@@ -38,7 +38,7 @@ $screen-sizes: (
 }
 
 @mixin xxl {
-  @media (min-width: map-get($screen-sizes, xxl)) {
+  @media (max-width: map-get($screen-sizes, xxl)) {
     @content;
   }
 }
