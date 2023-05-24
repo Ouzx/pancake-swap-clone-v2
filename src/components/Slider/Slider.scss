@@ -2,4 +2,12 @@
 
 .updated-slider-container {
   margin-top: 10em;
+
+  @include sm {
+    margin-bottom: 4em;
+  }
+
+  @include md {
+    margin-top: 5em;
+  }
 }
