@@ -5,12 +5,12 @@ import Slider from "./Swiper/Slider";
 import "./Home1.scss";
 import Gradient from "./Gradient/Gradient";
 
-export const Home1 = () => {
+export const Home1 = ({ children }) => {
   return (
     <div className="home1-container">
       <div className="home1-inner">
-        <Slider />
         <Gradient />
+        {children}
         <Hero />
       </div>
     </div>
