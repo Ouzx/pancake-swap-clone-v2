@@ -40,9 +40,7 @@ const ConnectWallet = () => {
       <AnimatedCake />
       <div className="connect-div-text-wrapper">
         <h2 className="connect-div-header">{data?.header}</h2>
-        <p className="connect-div-info">
-        {data?.paragraph}
-        </p>
+        <p className="connect-div-info">{data?.paragraph}</p>
         <p className="connect-div-info-strong">{data?.paragraphBold}</p>
         <div className="connect-button-link-wrapper">
           <Link title={data?.linkText} />

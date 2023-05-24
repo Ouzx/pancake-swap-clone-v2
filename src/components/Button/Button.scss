@@ -11,12 +11,14 @@
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
 
   transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
-  &:hover{
-      opacity: 0.65;
+
+  cursor: pointer;
+  &:hover {
+    opacity: 0.65;
   }
   &:active {
-      opacity: 0.85;
-      box-shadow: none;
-      transform: translateY(1px);
+    opacity: 0.85;
+    box-shadow: none;
+    transform: translateY(1px);
   }
 }
