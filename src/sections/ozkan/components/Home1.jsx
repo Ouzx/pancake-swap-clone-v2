@@ -1,6 +1,5 @@
 import React from "react";
 import Hero from "./Hero/Hero";
-import Slider from "./Swiper/Slider";
 
 import "./Home1.scss";
 import Gradient from "./Gradient/Gradient";
