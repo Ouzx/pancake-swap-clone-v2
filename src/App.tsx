@@ -5,6 +5,7 @@ import Ahmet from "./sections/ahmet/Index";
 
 import "./App.scss";
 import BackToTop from "./components/BackToTop/BackToTop";
+import SlideMode from "./components/SlideMode/SlideMode";
 import DarkMode from "./components/DarkMode";
 import { ThemeProvider } from "./context/ThemeContext";
 import UsedByMillions from "./sections/oguzhan/sections/UsedByMillions/UsedByMillions";
@@ -37,6 +38,7 @@ function App() {
           {/* UTILS */}
           <Settings />
           <BackToTop />
+          <SlideMode Speed={1} />
           <DarkMode />
         </div>
       </ThemeProvider>
