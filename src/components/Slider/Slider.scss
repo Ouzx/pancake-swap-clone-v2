@@ -3,7 +3,7 @@
 .updated-slider-container {
   position: relative;
   margin-top: 10em;
-
+  user-select: none;
   @include sm {
     margin-bottom: 4em;
   }

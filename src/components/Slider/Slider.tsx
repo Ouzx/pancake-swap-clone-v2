@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useSwipeable } from "react-swipeable";
 
 import Slide1 from "./Slides/Slide1/Slide1";
 
@@ -7,6 +8,12 @@ const SLIDES = [<Slide1 />, <Slide1 />, <Slide1 />, <Slide1 />, <Slide1 />];
 import "./Slider.scss";
 const Slider = () => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(2);
+
+  const handlers = useSwipeable({
+    onSwipedLeft: () => handleNextSlide(-1),
+    onSwipedRight: () => handleNextSlide(1),
+    trackMouse: true,
+  });
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,9 +27,29 @@ const Slider = () => {
     return () => clearInterval(interval);
   }, [activeSlideIndex]);
 
+  const handleNextSlide = (direction: number) => {
+    if (direction === 1) {
+      setActiveSlideIndex((prev) => {
+        if (prev === SLIDES.length - 1) {
+          return 0;
+        }
+        return prev + 1;
+      });
+    } else {
+      setActiveSlideIndex((prev) => {
+        if (prev === 0) {
+          return SLIDES.length - 1;
+        }
+        return prev - 1;
+      });
+    }
+  };
+
   return (
     <div className="updated-slider-container">
-      <div className="slide-container">{SLIDES[activeSlideIndex]}</div>
+      <div {...handlers} className="slide-container">
+        {SLIDES[activeSlideIndex]}
+      </div>
       <div className="slider-buttons-container">
         {SLIDES.map((_, index) => (
           <div
