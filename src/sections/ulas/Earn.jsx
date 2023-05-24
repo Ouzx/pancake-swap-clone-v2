@@ -1,6 +1,6 @@
 import SectionTemplate from "./components/SectionTemplate";
 import FloatingIcons from "./components/FloatingIcons";
-import './Earn.scss';
+import './SectionTemplate.scss';
 
 const earnProps = {
     title: 'earn',

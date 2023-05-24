@@ -1,5 +1,5 @@
 import React from "react"
-import '../Earn.scss'
+import '../SectionTemplate.scss'
 
 const TradeSeperator = () => {
     return (

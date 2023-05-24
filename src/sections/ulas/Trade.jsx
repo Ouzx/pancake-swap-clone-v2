@@ -1,7 +1,7 @@
 import FloatingIcons from "./components/FloatingIcons";
 import SectionTemplate from "./components/SectionTemplate";
 import TradeSeperator from "./components/TradeSeperator";
-import './Earn.scss'
+import './SectionTemplate.scss'
 
 const tradeProps = {
     title: 'trade',
