@@ -32,12 +32,8 @@ const SlideMode: FC<SlideModeProps> = ({ Speed = 1 }) => {
   }, [isPlaying, direction]);
 
   const handleScroll = () => {
-    //  window.pageYOffset - 100 <
-    //   document.documentElement.scrollHeight - window.innerHeight
     const scrollHeight = document.body.scrollHeight - window.innerHeight;
     const currentScroll = window.pageYOffset;
-
-    console.log(currentScroll, scrollHeight - 100);
 
     if (currentScroll >= scrollHeight - 100) {
       setDirection(Direction.Up);
