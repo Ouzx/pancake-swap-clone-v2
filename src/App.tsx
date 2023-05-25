@@ -30,10 +30,11 @@ function App() {
 
           {/* <UsedByMillions /> */}
           <UsedByMillions />
-
+          {/* ULAS'S PART*/}
+          <Trade />
+          <Earn />
           {/* OTHERS HERE */}
 
-          {/* ULAS'S PART*/}
           <Khaled />
           <Ahmet />
 
