@@ -42,19 +42,19 @@ const SyrupPoolsAndFarmsContainer = () => {
     const renderCards = (listType) => {
         const cardData = listType === 'farm' ?
             [
-                { cardId: 'One', title: 'UNW-BNB LP v3', percentage: useSpring({ val: 199073, from: { val: 0 } }) },
-                { cardId: 'Two', title: 'unshETH-USH LP v3', percentage: useSpring({ val: 228730, from: { val: 0 } }) },
-                { cardId: 'Three', title: 'AXL-USDT LP v3', percentage: useSpring({ val: 235810, from: { val: 0 } }) },
-                { cardId: 'Four', title: 'SQUAD-CAKE LP', percentage: useSpring({ val: 148078, from: { val: 0 } }) },
-                { cardId: 'Five', title: 'REVV-EDU LP v3', percentage: useSpring({ val: 136929, from: { val: 0 } }) }
+                { cardId: 'One', title: 'UNW-BNB LP v3', percentage: useSpring({ val: '199073', from: { val: '0' } }) },
+                { cardId: 'Two', title: 'unshETH-USH LP v3', percentage: useSpring({ val: '228730', from: { val: '0' } }) },
+                { cardId: 'Three', title: 'AXL-USDT LP v3', percentage: useSpring({ val: '235810', from: { val: '0' } }) },
+                { cardId: 'Four', title: 'SQUAD-CAKE LP', percentage: useSpring({ val: '148078', from: { val: '0' } }) },
+                { cardId: 'Five', title: 'REVV-EDU LP v3', percentage: useSpring({ val: '136929', from: { val: '0' } }) }
 
             ] :
             [
-                { cardId: 'One', title: 'Stake CAKE', percentage: useSpring({ val: 21622, from: { val: 0 } }) },
-                { cardId: 'Two', title: 'Stake HAY - Earn CAKE', percentage: useSpring({ val: 25193, from: { val: 0 } }) },
-                { cardId: 'Three', title: 'Stake CAKE - Earn SD', percentage: useSpring({ val: 13686, from: { val: 0 } }) },
-                { cardId: 'Four', title: 'Stake CAKE - Earn USH', percentage: useSpring({ val: 10972, from: { val: 0 } }) },
-                { cardId: 'Five', title: 'Stake CAKE - Earn PSTAKE', percentage: useSpring({ val: 10485, from: { val: 0 } }) }
+                { cardId: 'One', title: 'Stake CAKE', percentage: useSpring({ val: '21622', from: { val: '0' } }) },
+                { cardId: 'Two', title: 'Stake HAY - Earn CAKE', percentage: useSpring({ val: '25193', from: { val: '0' } }) },
+                { cardId: 'Three', title: 'Stake CAKE - Earn SD', percentage: useSpring({ val: '13686', from: { val: '0' } }) },
+                { cardId: 'Four', title: 'Stake CAKE - Earn USH', percentage: useSpring({ val: '10972', from: { val: '0' } }) },
+                { cardId: 'Five', title: 'Stake CAKE - Earn PSTAKE', percentage: useSpring({ val: '10485', from: { val: '0' } }) }
             ];
 
 
@@ -64,7 +64,7 @@ const SyrupPoolsAndFarmsContainer = () => {
                     <div className='syrup-farm-cards-topText'>{card.title}</div>
                     <div className='syrup-farm-flex syrup-farm-cards-middleText'>
                         <div className='syrup-farm-cards-middleText__text'>
-                            <animated.div style={{ display: 'inline-flex' }}>{card.percentage.val.to(val => Math.floor(val) / 1000)}</animated.div>%
+                            <animated.span style={{ display: 'inline-flex' }}>{card.percentage.val.to(val => Math.floor(val) / 1000)}</animated.span>%
                         </div>
                     </div>
                     <div className='syrup-farm-cards-bottomText'>APR</div>

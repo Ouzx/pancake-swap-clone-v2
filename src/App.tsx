@@ -14,6 +14,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 import TradeAnything from "./sections/ulas/sections/Trade/TradeAnything";
 import Earn from "./sections/ulas/sections/Earn/Earn";
+import SyrupPoolsAndFarmsContainer from "./sections/khaled/components/syrup-pools-and-farms-parent-container/syrup-pools-and-farms-container/syrup-pools-and-farms-container.component";
 
 const queryClient = new QueryClient();
 
@@ -30,7 +31,9 @@ function App() {
 
           {/* OTHERS HERE */}
           <TradeAnything />
-          <Earn />
+          <Earn>
+            <SyrupPoolsAndFarmsContainer />
+          </Earn>
           <Khaled />
           <Ahmet />
 
