@@ -9,7 +9,7 @@ import SocialIcons from "./Components/SocialIcons/SocialIcons";
 import { useQuery } from "@tanstack/react-query";
 import { iFooter } from "../../../../types/oguz";
 import { getFooter } from "../../../../api/oguz";
-import Button from "../../../../components/button/Button";
+import Button from "../../../../components/Button/Button";
 const Footer = () => {
   const {
     isLoading,

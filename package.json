@@ -19,6 +19,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-spring": "^9.7.1",
+    "react-swipeable": "^7.0.0",
     "typescript": "^5.0.4"
   },
   "devDependencies": {

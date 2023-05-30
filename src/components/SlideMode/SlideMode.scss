@@ -1,0 +1,31 @@
+.slide-mode {
+  $color-start: #ffb338;
+  $color-end: #ffe568;
+
+  position: fixed;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--color-white);
+  background: linear-gradient($color-start, $color-end);
+
+  width: 3rem;
+  height: 3rem;
+
+  left: 5%;
+  bottom: calc(110px + env(safe-area-inset-bottom));
+
+  border: none;
+  border-radius: 1rem;
+  border-bottom: 1px solid var(--color-dark-purple);
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+
+  z-index: 1000;
+  cursor: pointer;
+  transition: 0.3s;
+  color: black;
+  &:hover {
+    color: black;
+  }
+}

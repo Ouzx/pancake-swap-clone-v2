@@ -1,9 +1,14 @@
 @use "../../../../../screens.scss" as *;
 
+.syrup__farms__mega__container {
+  max-width: 968px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
 .syrup-pools-and-farms-container {
   display: flex;
   flex-direction: column;
-  margin-top: 24px;
 
   .top-syrup-pools-and-farms {
     display: flex;

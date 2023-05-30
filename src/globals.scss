@@ -28,10 +28,10 @@
   --color-syrup-farm-arrows-purple: #958cb9;
   --color-syrup-farm-border-left: #d7caec;
   --colors-earn-bg: linear-gradient(111deg, #f2ecf2, #e8f2f6);
-  --color-settings-bg:#280d5f99;
+  --color-settings-bg: #280d5f99;
   --color-switch-bg: #eeeaf4;
   --gradient-header: linear-gradient(111.68deg, #f2ecf2, #e8f2f6);
---color-logo-big: #000;
+  --color-logo-big: #000;
 }
 body[data-theme="dark"] {
   // dark colors
@@ -55,7 +55,7 @@ body[data-theme="dark"] {
   --color-card-background-home3: rgba(8, 6, 11, 0.6);
   --color-syrup-farm-arrows-purple: #8d84b4;
   --color-syrup-farm-border-left: #262130;
-  --colors-earn-bg: linear-gradient(139deg, #313d5c, #3d2a54)
+  --colors-earn-bg: linear-gradient(139deg, #313d5c, #3d2a54);
   --color-settings-bg: #f4eeff99;
   --color-switch-bg: #372f47;
   --gradient-header: linear-gradient(166.77deg, #3b4155, #3a3045);
