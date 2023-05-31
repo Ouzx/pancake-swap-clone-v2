@@ -37,10 +37,11 @@ function App() {
           <Earn />
           {/* OTHERS HERE */}
 
-          {/* ULAS'S PART*/}
           <Khaled />
           <Ahmet />
+
           {/* <Footer /> */}
+          <Footer />
 
           {/* UTILS */}
           <Settings />
