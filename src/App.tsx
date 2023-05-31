@@ -26,7 +26,7 @@ function App() {
           {/* OTHERS HERE */}
 
           {/* ULAS'S PART*/}
-          <Khaled />
+          {/* <Khaled /> */}
           <Ahmet />
           {/* <Footer /> */}
 
