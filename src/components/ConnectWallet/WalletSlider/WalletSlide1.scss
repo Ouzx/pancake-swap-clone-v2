@@ -1,0 +1,42 @@
+@use "../../../globals.scss" as *;
+@use "../../../screens.scss" as *;
+
+.walletSlide1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+
+
+    h1 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.1;
+        color: var(--color-purple);
+        margin-bottom: 0;
+    }
+    
+    img {
+        max-height: 178px;
+        max-width: 198px;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    div {
+        color: var(--color-light-purple);
+        font-weight: 400;
+        line-height: 1.5;
+        margin: auto;
+        max-width: 368px;
+        font-size: 14px; 
+        margin-top: 0;
+    }
+
+
+    }

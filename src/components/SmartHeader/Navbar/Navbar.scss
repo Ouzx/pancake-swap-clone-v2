@@ -1,5 +1,43 @@
 @use "../../../screens.scss" as *;
 @use "../../../globals.scss" as *;
+
+.lists-inner {
+  display: none;
+  position: absolute;
+  background-color: var(--color-home2);
+  border: 1px solid var(--color-bar-border);
+  border-radius: 16px;
+  width: 280px;
+
+  // start from the bottom of the navSpan
+  top: 100%;
+  left: 0;
+
+  margin: 0.1rem 0;
+  padding: 1rem 0;
+
+  flex-direction: column;
+  // gap: 2.5em;
+
+  a {
+    text-decoration: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--color-light-purple);
+    &:hover {
+      background-color: var(--color-tertiary);
+    }
+  }
+
+  &:hover {
+    display: flex;
+  }
+}
+
 .navbar-wrapper {
   background-color: var(--color-bar-bg);
   border-bottom: 1px solid var(--color-bar-border);
@@ -57,6 +95,11 @@
         gap: 0.5rem;
         margin: 0 2rem;
 
+        @include lg {
+          gap: 0.2rem;
+          margin: 0 1rem;
+        }
+
         .navSpan {
           display: flex;
 
@@ -65,49 +108,18 @@
           position: relative;
           padding: 16px;
 
+          @include lg {
+            padding-right: 10px;
+            padding-left: 10px;
+          }
+
           &:hover {
             background-color: var(--color-tertiary);
             border: 1px solid var(--color-tertiary);
             border-radius: 8px;
             .lists-inner {
               display: flex;
-            }
-          }
-
-          .lists-inner {
-            display: none;
-            position: absolute;
-            background-color: var(--color-home2);
-            border: 1px solid var(--color-bar-border);
-            border-radius: 16px;
-            width: 280px;
-
-            // start from the bottom of the navSpan
-            top: 100%;
-            left: 0;
-
-            margin: 0.1rem 0;
-            padding: 1rem 0;
-
-            flex-direction: column;
-            // gap: 2.5em;
-
-            a {
-              text-decoration: none;
-              padding-left: 16px;
-              padding-right: 16px;
-              height: 48px;
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              color: var(--color-light-purple);
-              &:hover {
-                background-color: var(--color-tertiary);
-              }
-            }
-
-            &:hover {
-              display: flex;
+              left: -10px;
             }
           }
         }
@@ -141,10 +153,17 @@
         }
       }
 
+      span {
+        &:hover {
+          opacity: 0.65;
+        }
+        
+      }
+
       .binance-button {
         cursor: pointer;
-
         position: relative;
+
         img {
           position: absolute;
           border-radius: 50%;
@@ -162,7 +181,7 @@
           background-color: var(--color-tertiary);
           fill: var(--color-dark-purple);
           color: var(--color-dark-purple);
-
+      
           svg {
             margin-right: auto;
             margin-left: 1.2rem;
@@ -174,6 +193,45 @@
           }
 
           margin-right: 0rem !important ;
+        }
+
+        &:hover {
+          // background-color: var(--color-tertiary);
+          // border: 1px solid var(--color-tertiary);
+          // border-radius: 8px;
+          
+          .lists-inner {
+            display: flex;
+            left: -80px;
+            // top: 40px;
+            padding-top: 10px;
+            border-top: none;
+           
+            a {
+              // display: inline-flex;
+              justify-content: flex-start;
+
+              color: var(--color-dark-purple);
+              &:first-child {
+                cursor: text;
+                border-bottom: 1px solid var(--color-bar-border);
+                color: var(--color-light-purple);
+              }
+              &:nth-child(2) {
+                color: var(--color-purple);
+              }
+
+              img {
+                position: initial;
+                height: 24px;
+                width: 24px;
+                margin-right: 12px;
+              }
+            }
+             &:hover {
+                display: flex;
+              }
+          }
         }
       }
 
@@ -191,6 +249,7 @@
         }
         @include xl {
           display: none;
+          
         }
       }
 
@@ -203,3 +262,40 @@
     }
   }
 }
+
+// .lists-inner {
+//   display: none;
+//   position: absolute;
+//   background-color: var(--color-home2);
+//   border: 1px solid var(--color-bar-border);
+//   border-radius: 16px;
+//   width: 280px;
+
+//   // start from the bottom of the navSpan
+//   top: 100%;
+//   left: 0;
+
+//   margin: 0.1rem 0;
+//   padding: 1rem 0;
+
+//   flex-direction: column;
+//   // gap: 2.5em;
+
+//   a {
+//     text-decoration: none;
+//     padding-left: 16px;
+//     padding-right: 16px;
+//     height: 48px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     color: var(--color-light-purple);
+//     &:hover {
+//       background-color: var(--color-tertiary);
+//     }
+//   }
+
+//   &:hover {
+//     display: flex;
+//   }
+// }

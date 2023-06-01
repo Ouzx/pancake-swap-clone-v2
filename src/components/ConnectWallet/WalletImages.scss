@@ -1,0 +1,44 @@
+@use "../../globals.scss" as *;
+
+.walletImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+    border-radius: 16px;
+    opacity: 1;
+    transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+    background-color: transparent;
+
+    &:hover {
+        opacity: 0.65;
+    }
+
+    .images {
+        border-bottom: 4px;
+        padding: 2px;
+        border-radius: 13px;
+    }
+
+}
+
+.wallet-phrase {
+    color: var(--color-dark-purple);
+    line-height: 1.5;
+    font-size: 12px;
+    text-align: center;
+}
+
+.walletImage-more {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-dark-purple);
+}

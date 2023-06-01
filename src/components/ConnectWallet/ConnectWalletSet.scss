@@ -1,0 +1,268 @@
+@use "../../screens.scss" as *;
+@use "../../globals.scss" as *;
+
+.connectWallet-container {
+    display: none;
+    // display: flex;
+    position: fixed;
+    background-color: var(--color-settings-bg);
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0;
+    z-index: 99999;
+
+    flex-direction: column;
+    justify-content: flex-end;
+   
+
+    @include md {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.connectWallet-active {
+    display: flex;
+}
+
+.connectWallet-wrapper {
+    width: 100%;
+    background: var(--color-home2);
+    box-shadow: rgba(14, 14, 44, 0.1) 0px 20px 36px -8px, rgba(0, 0, 0, 0.05) 0px 1px 1px;
+    border: 1px solid var(--color-bar-border);
+    border-radius: 32px 32px 0px 0px;
+    
+    min-height: 300px;
+    max-height: 90vh;
+    max-width: none !important;
+
+    position: relative;
+    display: flex;
+    z-index: 1000;
+
+    @include md {
+        // justify-content: center;
+        // align-items: center;
+        width: fit-content;
+        top: auto;
+        border-radius: 32px;
+        max-height: 100vh;
+        max-height: 490px;
+    }
+
+    @include lg {
+        width: 792px;
+    }
+
+    
+    .connectWallet-header {
+        position: absolute;
+        top: -50px;
+        flex-grow: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 16px;
+        border-bottom: none;
+
+        @include md {
+
+        }
+
+        button {
+            display: inline-flex;
+            justify-content: center;
+            flex-grow: 0;
+            cursor: pointer;
+            border: 0px;
+            outline: 0px;
+            padding: 8px;
+            border-radius: 16px 16px 0px 0px;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--color-light-purple);
+            background-color: var(--color-switch-bg);
+            
+            
+            &:last-child {
+                color: var(--color-bar-bg);
+                background-color: var(--color-light-purple);
+            }
+        }
+    }
+
+    .connectWallet-main {
+        display: flex;
+        position: relative;
+        width: 100%;
+        z-index: 1000;
+        border-radius: 24px;
+        background: var(--gradient-header);
+
+        .connectWallet-main-left {
+            display: flex;
+            flex-direction: column;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            z-index: 1000;
+            border-radius: 24px;
+            background: var(--color-bar-bg);
+            max-width: 100%;
+
+            @include sm {
+                max-width: 360px;
+            }
+
+            @include lg {
+                max-width: 408px;
+            }
+
+            .connectWallet-main-left-context {
+                padding-left: 48px;
+                padding-right: 48px;
+
+                h4 {
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 1.1;
+                    color: var(--color-black);
+                    margin: 0;
+                }
+                div {
+                    color: var(--color-light-purple);
+                    font-weight: 400;
+                    line-height: 1.5;
+                    padding-top: 24px;
+                    padding-bottom: 32px;
+                    font-size: 14px;
+                }
+            }
+
+            .connectWallet-main-left-images {
+                display: grid;
+                overflow-y: auto;
+                overflow-x: hidden;
+                padding-bottom: 12px;
+                padding-left: 16px;
+                padding-right: 16px;
+
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                row-gap: 10px;
+                column-gap: 8px;
+
+                @include sm {
+                    row-gap: 24px;
+                    column-gap: 16px;
+                    grid-template-columns: 1fr 1fr;
+                    padding-left: 48px;
+                    padding-right: 48px;
+                }
+
+                @include lg {
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
+        }
+
+        .connectWallet-main-right {
+            display: none;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+            justify-content: center;
+            flex: 1 1;
+            text-align: center;
+            padding-left: 24px;
+            padding-right: 24px;
+
+            @include sm {
+                display: flex;    
+            }
+
+            h1 {
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 1.1;
+                color: var(--color-purple);
+            }
+            
+            img {
+                max-height: 178px;
+                max-width: 198px;
+                width: 100%;
+            }
+
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+
+                transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+                background-color: var(--color-light-purple);
+                color: var(--color-bar-bg);
+                border: none;
+                border-radius: 16px;
+                height: 48px;
+                padding: 0px 24px;
+                font-weight: 600;
+
+                &:hover {
+                    opacity: 0.65;
+                    text-decoration: underline;
+                }
+
+                svg {
+                    margin-left: 4px;
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+}
+
+.web3Wallet {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 48px auto;
+
+    @include md {
+      width: 720px;
+    }
+
+    div {
+        margin-bottom: 0;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+
+        transition: background-color 0.2s ease 0s, opacity 0.2s ease 0s;
+        background-color: var(--color-light-purple);
+        color: var(--color-bar-bg);
+        border: none;
+        border-radius: 16px;
+        height: 48px;
+        width: fit-content;
+        padding: 5px 24px;
+        font-weight: 600;
+        min-height: 40px;
+        margin-bottom: 48px;
+        margin-top: 15px;
+
+        &:hover {
+            opacity: 0.65;
+            text-decoration: underline;
+        }
+
+        svg {
+            margin-left: 4px;
+            flex-shrink: 0;
+        }
+    }
+}
+

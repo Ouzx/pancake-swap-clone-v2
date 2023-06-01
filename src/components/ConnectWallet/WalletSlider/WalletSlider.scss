@@ -1,0 +1,48 @@
+@use "../../../screens.scss" as *;
+@use "../../../globals.scss" as *;
+
+.wallet-updated-slider-container {
+  position: relative;
+  margin-top: 10em;
+  user-select: none;
+  @include sm {
+    margin-bottom: 4em;
+  }
+
+  @include md {
+    margin-top: 5em;
+  }
+
+  .wallet-slider-buttons-container {
+    position: absolute;
+    z-index: 10;
+
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 0;
+
+    .wallet-slider-button {
+      height: 8px;
+      width: 56px;
+
+      margin: 0;
+
+      border: none;
+      background-color: var(--color-home2-1);
+      &:first-child {
+        border-radius: 4px 0 0 4px;
+      }
+
+      &:last-child {
+        border-radius: 0 4px 4px 0;
+        margin-left: 10px;
+      }
+    }
+    .active {
+      background-color: var(--color-purple);
+    }
+  }
+}

@@ -4,6 +4,7 @@ import PurpleBunny from "./PurpleBunny";
 import Trade from "./Trade";
 import UsedByMillionsSeperator from "./UsedByMillionsSeperator";
 import MicroLogo from "./MicroLogo";
+import MiniLogo from "./MiniLogo";
 export {
   Graph,
   MicroLogo,
@@ -11,4 +12,5 @@ export {
   PurpleBunny,
   Trade,
   UsedByMillionsSeperator,
+  MiniLogo,
 };
