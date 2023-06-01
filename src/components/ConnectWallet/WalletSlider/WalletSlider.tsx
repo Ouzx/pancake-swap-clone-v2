@@ -1,16 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { useSwipeable } from "react-swipeable";
 
-import Slide1 from "./Slides/Slide1/Slide1";
-import Slide2 from "./Slides/Slide2/Slide2";
-import SlideOzk from "./Slides/SlideOzk/SlideOzk";
+import "./WalletSlider.scss";
+import WalletSlide1 from "./WalletSlide1";
 
-const SLIDES = [<Slide1 />, <Slide2 />, <SlideOzk />, <Slide1 />, <Slide2 />];
+const SLIDES = [
+  <WalletSlide1 
+    header="Your first step in the DeFi world"
+    image="/ConnectWalletAlt/wallet_intro.png" 
+    pharase="A Web3 Wallet allows you to send and receive crypto 
+    assets like bitcoin, BNB, ETH, NFTs and much more."
+  />, 
+  <WalletSlide1 
+    header="Login using a wallet connection"
+    image="/ConnectWalletAlt/world_lock.png" 
+    pharase="Instead of setting up new accounts 
+    and passwords for every website, simply set up 
+    your wallet in one go, and connect it to your favorite DApps."
+  />, 
+];
 
-import "./Slider.scss";
 
-const Slider = () => {
-  const [activeSlideIndex, setActiveSlideIndex] = useState(2);
+const WalletSlider = () => {
+  const [activeSlideIndex, setActiveSlideIndex] = useState(0);
 
   const handlers = useSwipeable({
     onSwipedLeft: () => handleNextSlide(-1),
@@ -19,7 +31,6 @@ const Slider = () => {
   });
 
   useEffect(() => {
-    return;
     const interval = setInterval(() => {
       setActiveSlideIndex((prev) => {
         if (prev === SLIDES.length - 1) {
@@ -50,15 +61,15 @@ const Slider = () => {
   };
 
   return (
-    <div className="updated-slider-container">
+    <div className="wallet-updated-slider-container" style={{marginTop: "5em"}}>
       <div {...handlers} className="slide-container">
         {SLIDES[activeSlideIndex]}
       </div>
-      <div className="slider-buttons-container">
+      <div className="wallet-slider-buttons-container">
         {SLIDES.map((_, index) => (
           <div
             key={"button" + index}
-            className={`slider-button ${
+            className={`wallet-slider-button ${
               index === activeSlideIndex ? "active" : ""
             }`}
             onClick={() => setActiveSlideIndex(index)}
@@ -69,4 +80,4 @@ const Slider = () => {
   );
 };
 
-export default Slider;
+export default WalletSlider;

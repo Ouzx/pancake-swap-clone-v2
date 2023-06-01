@@ -16,8 +16,10 @@ import NavbarList from "./NavbarLists/NavbarList";
 import NavbarLanguageSelector from "./LanguageSelector/NavbarLanguageSelector";
 
 import { openSettings } from "../../Settings/Settings";
+import { openConnectWallet1 } from "../../ConnectWallet/ConnectWalletSet";
 
-const Navbar = () => {
+
+function Navbar() {
   return (
     <div className="navbar-wrapper">
       <div className="navbar-container">
@@ -38,8 +40,7 @@ const Navbar = () => {
                     "Perpetual",
                     "Bridge",
                     "Limit(V2)",
-                  ]}
-                />
+                  ]} />
               </div>
             </span>
             <span className="navSpan">
@@ -57,8 +58,7 @@ const Navbar = () => {
                     "Prediction (BETA)",
                     "Lottery",
                     "Pottery (BETA)",
-                  ]}
-                />
+                  ]} />
               </div>
             </span>
             <span className="navSpan">
@@ -79,8 +79,7 @@ const Navbar = () => {
                     "Leaderboard",
                     "Blog",
                     "Docs",
-                  ]}
-                />
+                  ]} />
               </div>
             </span>
           </nav>
@@ -89,20 +88,38 @@ const Navbar = () => {
           <div className="coin">
             <PsCoin />
           </div>
-          <span></span>
-          {/* <TbWorld style={{ cursor: "pointer" }} size={24} /> */}
-          <NavbarLanguageSelector />
-          <GoGear
-            onClick={openSettings}
-            style={{ cursor: "pointer" }}
-            size={24}
-          />
-
+          
+            {/* <TbWorld style={{ cursor: "pointer" }} size={24} /> */}
+            <NavbarLanguageSelector />
+          
+          <span>
+            <GoGear
+              onClick={openSettings}
+              style={{ cursor: "pointer"}}
+              size={24} />
+          </span>
           <div className="binance-button small">
             <Button text="" style={{ padding: "0.3rem 1rem" }}>
               <AiFillCaretDown size={18} />
             </Button>
             <img src={binanceImg} alt="binance" />
+            <div className="lists-inner">
+              <a href="#">
+                Select a Network
+              </a>
+              <a href="#">
+                <img src="/ConnectWalletAlt/56.png" alt="" />
+                BNB Smart Chain
+              </a>
+              <a href="#">
+                <img src="/ConnectWalletAlt/compass1.png" alt="" />
+                Ethereum
+              </a>
+              <a href="#">
+                <img src="/ConnectWalletAlt/apt.png" alt="" />
+                Aptos
+              </a>  
+            </div>
           </div>
 
           <div className="binance-button medium">
@@ -117,6 +134,23 @@ const Navbar = () => {
               <AiFillCaretDown size={18} />
             </Button>
             <img src={binanceImg} alt="binance" />
+            <div className="lists-inner">
+              <a href="#">
+                Select a Network
+              </a>
+              <a href="#">
+                <img src="/ConnectWalletAlt/56.png" alt="" />
+                BNB Smart Chain
+              </a>
+              <a href="#">
+                <img src="/ConnectWalletAlt/compass1.png" alt="" />
+                Ethereum
+              </a>
+              <a href="#">
+                <img src="/ConnectWalletAlt/apt.png" alt="" />
+                Aptos
+              </a>  
+            </div>
           </div>
           <div className="binance-button big">
             <Button
@@ -130,23 +164,48 @@ const Navbar = () => {
               <AiFillCaretDown size={18} />
             </Button>
             <img src={binanceImg} alt="binance" />
+            <div className="lists-inner">
+              <a href="#">
+                Select a Network
+              </a>
+              <a href="#">
+                <img src="/ConnectWalletAlt/56.png" alt="" />
+                BNB Smart Chain
+              </a>
+              <a href="#">
+                <img src="/ConnectWalletAlt/compass1.png" alt="" />
+                Ethereum
+              </a>
+              <a href="#">
+                <img src="/ConnectWalletAlt/apt.png" alt="" />
+                Aptos
+              </a>  
+            </div>
           </div>
-          <div className="small">
-            <Button text="Connect" style={{ padding: "0.3rem 1rem" }}></Button>
+          <div className="small" onClick={openConnectWallet1}>
+            <Button 
+              text="Connect" 
+              style={{ padding: "0.3rem 1rem" }}
+              
+            ></Button>
           </div>
-          <div className="medium">
-            <Button text="Connect" style={{ padding: "0.3rem 1rem" }}></Button>
+          <div className="medium" onClick={openConnectWallet1}>
+            <Button text="Connect" 
+              style={{ padding: "0.3rem 1rem" }}
+              
+              ></Button>
           </div>
-          <div className="big">
+          <div className="big" onClick={openConnectWallet1}>
             <Button
               text="Connect Wallet"
               style={{ padding: "0.3rem 1rem" }}
+              
             ></Button>
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Navbar;

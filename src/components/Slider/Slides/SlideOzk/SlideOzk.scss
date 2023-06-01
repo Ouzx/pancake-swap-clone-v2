@@ -1,0 +1,65 @@
+@use "../../../../screens.scss" as *;
+@use "../../../../globals.scss" as *;
+
+.slideOzk {
+    background: linear-gradient(128.04deg, 
+    rgb(187, 211, 251) -23.79%, 
+    rgb(75, 60, 255) 121.4%);
+    border-radius: 32px;
+    position: relative;
+    padding: 1.5em;
+
+    .slideOzk-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 100%;
+
+        img {
+            margin-top: 3px;
+        }
+
+        .slideOzk-header {
+            font-weight: 600;
+            font-size: 23px;
+            line-height: 110%;
+            color: rgb(255, 255, 255);
+            margin-bottom: 21px;
+            margin-top: 16px;
+        }
+
+        .slideOzk-button {
+            padding: 0 24px;
+            z-index: 2;
+        }
+        
+    }
+
+    .slideOzk-img {
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+       
+        width: auto;
+
+        @include sm {
+            right: 1px;
+            bottom: -18px;
+        }
+
+        @include lg {
+            right: 0;
+            bottom: -21px;
+        }
+        
+        img {
+            max-width: 100%;
+            max-height: 220px;
+            min-height: 100%;
+            min-width: 100%;
+        }
+    }
+}
+
