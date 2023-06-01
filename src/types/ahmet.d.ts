@@ -17,5 +17,5 @@ export interface iCake {
 
 export interface BlockArray {
   entry: string;
-  data: string;
+  data: string | number;
 }

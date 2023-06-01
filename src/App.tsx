@@ -5,14 +5,19 @@ import BackToTop from "./components/BackToTop/BackToTop";
 import SlideMode from "./components/SlideMode/SlideMode";
 import DarkMode from "./components/DarkMode";
 import Settings from "./components/Settings/Settings";
+
 import ConnectWalletSet from "./components/ConnectWallet/ConnectWalletSet";
-import Khaled from "./sections/khaled/Index";
 
 import Slider from "./components/Slider/Slider";
+        
+import Khaled from "./sections/khaled/Index";
+
 import Ozkan from "./sections/ozkan/Index";
 import Ahmet from "./sections/ahmet/Index";
 import UsedByMillions from "./sections/oguzhan/sections/UsedByMillions/UsedByMillions";
 import Footer from "./sections/oguzhan/sections/Footer/Footer";
+import Trade from "./sections/ulas/Trade";
+import Earn from "./sections/ulas/Earn";
 
 import "./App.scss";
 
@@ -31,10 +36,11 @@ function App() {
 
           {/* <UsedByMillions /> */}
           <UsedByMillions />
-
+          {/* ULAS'S PART*/}
+          <Trade />
+          <Earn />
           {/* OTHERS HERE */}
 
-          {/* ULAS'S PART*/}
           <Khaled />
           <Ahmet />
 
