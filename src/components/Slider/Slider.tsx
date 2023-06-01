@@ -19,7 +19,6 @@ const Slider = () => {
   });
 
   useEffect(() => {
-    return;
     const interval = setInterval(() => {
       setActiveSlideIndex((prev) => {
         if (prev === SLIDES.length - 1) {
