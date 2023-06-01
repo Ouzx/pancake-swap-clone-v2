@@ -1,10 +1,17 @@
 @use '../../../../../screens.scss' as *;
 .cake-stats-div{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content:space-between ;
+    display: grid;
+    gap: 16px 8px;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "a d" "b e" "c f";
     @include sm {
-        margin-left: -8px;
+        gap: 16px;
+    }
+    @include md {
+        grid-template-columns: repeat(3, auto);
+        grid-template-areas: "a b c" "d e f";
+        gap: 32px;
     }
 }
