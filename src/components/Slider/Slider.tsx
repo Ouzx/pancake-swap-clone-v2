@@ -3,9 +3,10 @@ import { useSwipeable } from "react-swipeable";
 
 import Slide1 from "./Slides/Slide1/Slide1";
 
-const SLIDES = [<Slide1 />, <Slide1 />, <Slide1 />, <Slide1 />, <Slide1 />];
+const SLIDES = [<Slide1 />, <Slide2 />, <Slide2 />, <Slide2 />, <Slide2 />];
 
 import "./Slider.scss";
+import Slide2 from "./Slides/Slide2/Slide2";
 const Slider = () => {
   const [activeSlideIndex, setActiveSlideIndex] = useState(2);
 
@@ -16,6 +17,7 @@ const Slider = () => {
   });
 
   useEffect(() => {
+    return;
     const interval = setInterval(() => {
       setActiveSlideIndex((prev) => {
         if (prev === SLIDES.length - 1) {
