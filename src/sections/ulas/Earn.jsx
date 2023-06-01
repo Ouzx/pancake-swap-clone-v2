@@ -1,6 +1,8 @@
 import SectionTemplate from "./components/SectionTemplate";
 import FloatingIcons from "./components/FloatingIcons";
 import './SectionTemplate.scss';
+import SyrupPoolsAndFarmsContainer from "../khaled/components/syrup-pools-and-farms-parent-container/syrup-pools-and-farms-container/syrup-pools-and-farms-container.component";
+import TradeSeperator from "./components/TradeSeperator";
 
 const earnProps = {
     title: 'earn',
@@ -18,7 +20,10 @@ const earnSrc = {
 
 function Earn() {
     return (
-        <div>
+        <div className="earn__ultra__mega__container">
+            <div className="anything__seperator">
+                <TradeSeperator />
+            </div>
             <SectionTemplate
                 title={earnProps.title}
                 direction={earnProps.direction}
@@ -26,6 +31,9 @@ function Earn() {
                 textContent={earnProps.textContent}>
                 <FloatingIcons firstImg={earnSrc.first} secondImg={earnSrc.second} thirdImg={earnSrc.third} />
             </SectionTemplate>
+            <div className="syrup__farms__mega__container">
+                <SyrupPoolsAndFarmsContainer />
+            </div>
         </div>);
 }
 

@@ -1,6 +1,6 @@
 import FloatingIcons from "./components/FloatingIcons";
 import SectionTemplate from "./components/SectionTemplate";
-import TradeSeperator from "./components/TradeSeperator";
+// import TradeSeperator from "./components/TradeSeperator";
 import './SectionTemplate.scss'
 
 const tradeProps = {
@@ -28,9 +28,9 @@ function Trade() {
                 textContent={tradeProps.textContent}>
                 <FloatingIcons firstImg={tradeSrc.first} secondImg={tradeSrc.second} thirdImg={tradeSrc.third} />
             </SectionTemplate>
-            <div className="anything__seperator">
+            {/* <div className="anything__seperator">
                 <TradeSeperator />
-            </div>
+            </div> */}
 
         </div>);
 }
