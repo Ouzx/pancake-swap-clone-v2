@@ -34,7 +34,7 @@ const CakeStats = () => {
 
   return (
     <div className="cake-stats-div">
-      {data.blocks.map((el) =><StatSection entry={el.entry} data={el.data} />)}
+      {data.blocks.map((el, index) =><StatSection key={index} entry={el.entry} data={el.data} />)}
     </div>
   );
 };

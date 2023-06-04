@@ -17,6 +17,7 @@ $text-hovered: #f4eeff;
   border-radius: 16px;
   @extend %scroll-bar;
 
+
   &__item {
     margin-bottom: 10px;
     transition: color 0.2s ease-in-out;

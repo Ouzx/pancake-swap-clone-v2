@@ -5,8 +5,11 @@ import BackToTop from "./components/BackToTop/BackToTop";
 import SlideMode from "./components/SlideMode/SlideMode";
 import DarkMode from "./components/DarkMode";
 import Settings from "./components/Settings/Settings";
-import Slider from "./components/Slider/Slider";
 
+import ConnectWalletSet from "./components/ConnectWallet/ConnectWalletSet";
+
+import Slider from "./components/Slider/Slider";
+        
 import Khaled from "./sections/khaled/Index";
 
 import Ozkan from "./sections/ozkan/Index";
@@ -18,6 +21,7 @@ import Earn from "./sections/ulas/Earn";
 
 import "./App.scss";
 import MobileNavBar from "./components/MobileNavBar/MobileNavBar.component";
+
 
 const queryClient = new QueryClient();
 
@@ -49,6 +53,7 @@ function App() {
 
           {/* UTILS */}
           <Settings />
+          <ConnectWalletSet />
           <BackToTop />
           <SlideMode Speed={1} />
           <DarkMode />
