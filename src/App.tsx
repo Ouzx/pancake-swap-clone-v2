@@ -17,6 +17,7 @@ import Trade from "./sections/ulas/Trade";
 import Earn from "./sections/ulas/Earn";
 
 import "./App.scss";
+import MobileNavBar from "./components/MobileNavBar/MobileNavBar.component";
 
 const queryClient = new QueryClient();
 
@@ -25,6 +26,9 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <ThemeProvider>
         <div className="App">
+          {/* Mobile Navigation bar */}
+          <MobileNavBar />
+
           {/* OZKAN'S PART HERE */}
           <Ozkan>
             <Slider />
