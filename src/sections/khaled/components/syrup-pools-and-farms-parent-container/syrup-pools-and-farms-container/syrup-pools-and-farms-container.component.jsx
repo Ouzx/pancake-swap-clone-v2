@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 import { TbArrowsDownUp } from "react-icons/tb";
-import commaNumber from 'comma-number';
 
 import './syrup-pools-and-farms-container.styles.scss'
 
