@@ -67,7 +67,7 @@ const BuyCake = () => {
       <CakeStats />
       {showMeme && (
         <div className="meme">
-          <RxCrossCircled className="meme-cross" size={28} onClick={handleMeme}/>
+          <RxCrossCircled className="meme-cross" size={42} onClick={handleMeme}/>
           <img src="/meme.png" alt="Overlay Image" />
         </div>
       )}

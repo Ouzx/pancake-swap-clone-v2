@@ -10,6 +10,8 @@ import { useQuery } from "@tanstack/react-query";
 import { iFooter } from "../../../../types/oguz";
 import { getFooter } from "../../../../api/oguz";
 import Button from "../../../../components/Button/Button";
+import { useState } from "react";
+import { RxCrossCircled } from "react-icons/rx";
 const Footer = () => {
   const {
     isLoading,
@@ -26,6 +28,8 @@ const Footer = () => {
     queryFn: getFooter,
   });
 
+  const [showMeme, setShowMeme] = useState(false);
+
   if (isLoading) {
     return <span>Loading...</span>;
   }
@@ -36,6 +40,10 @@ const Footer = () => {
 
   if (data === undefined) {
     return <span>No Data</span>;
+  }
+
+  const handleMeme = () => {
+    setShowMeme(!showMeme);
   }
 
   return (
@@ -49,9 +57,11 @@ const Footer = () => {
           <div className="space-filler">
             <CoinPrice />
           </div>
+          <div className="meme-div" onClick={handleMeme}>
           <Button text="Buy CAKE">
             <AiOutlineArrowRight />
           </Button>
+          </div>
         </div>
 
         <div className=" row">
@@ -99,6 +109,13 @@ const Footer = () => {
 
         <div className="seperator-component row"></div>
       </div>
+
+      {showMeme && (
+        <div className="meme">
+          <RxCrossCircled className="meme-cross" size={42} onClick={handleMeme}/>
+          <img src="/meme.png" alt="Overlay Image" />
+        </div>
+      )}
     </div>
   );
 };
